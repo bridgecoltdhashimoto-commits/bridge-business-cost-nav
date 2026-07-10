@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="BRIDGE事業ナビ">
+  <defs>
+    <linearGradient id="g" x1="60" y1="48" x2="452" y2="464" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1633"/>
+      <stop offset="0.48" stop-color="#1769ff"/>
+      <stop offset="1" stop-color="#2bb8ff"/>
+    </linearGradient>
+    <linearGradient id="a" x1="132" y1="126" x2="380" y2="386" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dff4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="118" fill="url(#g)"/>
+  <path d="M143 332h226" stroke="#fff" stroke-width="34" stroke-linecap="round" opacity=".32"/>
+  <path d="M173 286h166" stroke="#fff" stroke-width="34" stroke-linecap="round" opacity=".42"/>
+  <path d="M206 240h100" stroke="#fff" stroke-width="34" stroke-linecap="round" opacity=".52"/>
+  <path d="M158 355V183c0-28 18-48 50-48h91c55 0 91 31 91 78 0 32-17 56-45 68 35 11 55 36 55 73 0 55-41 89-104 89h-88c-32 0-50-20-50-48v-40Zm82-128h49c23 0 37-12 37-32s-14-31-37-31h-49v63Zm0 148h58c25 0 40-13 40-35 0-23-15-36-40-36h-58v71Z" fill="url(#a)"/>
+</svg>
