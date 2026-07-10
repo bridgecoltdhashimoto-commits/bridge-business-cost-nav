@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>事業者向けコスト削減・資金繰り確認ナビ｜株式会社BRIDGE</title>
+  <meta name="description" content="固定費、資金繰り、会計、通信、決済、業務効率化など、事業者が外部サービスを確認する前に見る判断ナビです。株式会社BRIDGEは申込・審査・契約の代行を行いません。">
+  <meta property="og:title" content="事業者向けコスト削減・資金繰り確認ナビ｜株式会社BRIDGE">
+  <meta property="og:description" content="事業の固定費・資金繰り・業務効率化を、悩み別に確認するための情報ページです。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bridgecoltdhashimoto-commits.github.io/bridge-business-cost-nav/">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0b1633">
+  <meta name="application-name" content="BRIDGE事業ナビ">
+  <meta name="apple-mobile-web-app-title" content="BRIDGE事業ナビ">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="canonical" href="https://bridgecoltdhashimoto-commits.github.io/bridge-business-cost-nav/">
+  <link rel="icon" href="icon.svg?v=20260710-1" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest?v=20260710-1">
+  <style>
+    :root{
+      --ink:#101828;
+      --muted:#5b6678;
+      --line:#d9e2f2;
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --navy:#0b1633;
+      --blue:#1769ff;
+      --cyan:#2bb8ff;
+      --green:#16a36a;
+      --amber:#f59e0b;
+      --red:#e84d6a;
+      --shadow:0 22px 54px rgba(13,32,68,.12);
+      --soft:0 12px 28px rgba(13,32,68,.08);
+      --max:1120px;
+      --radius:24px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0%,rgba(43,184,255,.16),transparent 30%),radial-gradient(circle at 92% 8%,rgba(23,105,255,.16),transparent 28%),linear-gradient(180deg,#fff 0%,var(--bg) 44%,#eef3fb 100%);line-height:1.75;letter-spacing:.01em}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max),92%);margin:0 auto}
+    .skip-link{position:absolute;left:-9999px;top:8px;background:#fff;color:#000;padding:10px;border-radius:10px;z-index:9999}.skip-link:focus{left:8px}
+    .site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(13,32,68,.08)}
+    .header-inner{width:min(var(--max),92%);min-height:70px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:1000;color:var(--navy)}
+    .brand-mark{width:40px;height:40px;border-radius:15px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--navy),var(--blue),var(--cyan));box-shadow:0 10px 22px rgba(23,105,255,.22);font-weight:1000}
+    .brand small{display:block;color:var(--muted);font-size:.72rem;line-height:1.2;font-weight:900;letter-spacing:.08em}
+    .nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+    .nav a{display:inline-flex;min-height:36px;align-items:center;padding:8px 13px;border-radius:999px;border:1px solid rgba(23,105,255,.16);background:#fff;color:var(--navy);font-weight:900;font-size:.86rem;box-shadow:0 8px 18px rgba(13,32,68,.05)}
+    .nav a.primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;border:none}
+    .hero{padding:58px 0 36px}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(320px,.94fr);gap:26px;align-items:center}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:999px;background:rgba(23,105,255,.10);border:1px solid rgba(23,105,255,.16);color:var(--navy);font-size:.78rem;font-weight:1000;letter-spacing:.08em;margin-bottom:14px}
+    h1{font-size:clamp(2.15rem,5vw,4.25rem);line-height:1.12;color:var(--navy);font-weight:1000;letter-spacing:-.02em;margin-bottom:16px}
+    h1 span{background:linear-gradient(90deg,var(--blue),var(--cyan),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{font-size:1.06rem;color:#344054;font-weight:650;max-width:680px;margin-bottom:20px}
+    .hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:640px;margin-bottom:16px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 18px;border-radius:17px;font-weight:1000;line-height:1.35;text-align:center;border:1px solid transparent;transition:.2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;box-shadow:0 15px 30px rgba(23,105,255,.24)}
+    .btn-secondary{background:#fff;border-color:rgba(23,105,255,.18);color:var(--navy);box-shadow:var(--soft)}
+    .btn-muted{background:#f2f5fb;border-color:var(--line);color:var(--navy)}
+    .notice-mini{font-size:.86rem;color:var(--muted);font-weight:650}
+    .hero-panel{background:rgba(255,255,255,.86);border:1px solid rgba(217,226,242,.88);border-radius:28px;padding:22px;box-shadow:var(--shadow)}
+    .panel-title{font-size:1.25rem;color:var(--navy);font-weight:1000;margin-bottom:12px}
+    .status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:14px}
+    .status-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--soft);min-height:98px}
+    .status-card small{display:block;color:var(--muted);font-size:.75rem;font-weight:1000;letter-spacing:.08em;margin-bottom:5px}.status-card strong{display:block;color:var(--navy);font-size:1rem;line-height:1.45}
+    .safe-box{border-radius:18px;border:1px solid rgba(22,163,106,.20);background:linear-gradient(135deg,rgba(22,163,106,.10),rgba(43,184,255,.09));padding:15px;color:#24405a;font-weight:650;font-size:.92rem}
+    section{padding:34px 0}.section-head{margin-bottom:18px}.label{display:inline-block;color:var(--blue);font-weight:1000;font-size:.78rem;letter-spacing:.12em;margin-bottom:8px}.section-head h2{font-size:clamp(1.75rem,3.4vw,2.65rem);line-height:1.22;color:var(--navy);font-weight:1000;margin-bottom:9px}.section-head p{color:var(--muted);font-weight:650;max-width:780px}
+    .choice-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.choice-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--soft);min-height:178px;display:flex;flex-direction:column;gap:10px}.choice-icon{width:44px;height:44px;border-radius:16px;display:grid;place-items:center;color:#fff;font-weight:1000;background:linear-gradient(135deg,var(--blue),var(--cyan))}.choice-card:nth-child(2) .choice-icon{background:linear-gradient(135deg,var(--green),var(--cyan))}.choice-card:nth-child(3) .choice-icon{background:linear-gradient(135deg,var(--amber),var(--red))}.choice-card:nth-child(4) .choice-icon{background:linear-gradient(135deg,var(--navy),var(--blue))}.choice-card h3{font-size:1.08rem;line-height:1.42;color:var(--navy);font-weight:1000}.choice-card p{color:var(--muted);font-size:.92rem;font-weight:650}.choice-card a{margin-top:auto;color:var(--blue);font-weight:1000;font-size:.9rem}
+    .service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.service-card{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--soft);overflow:hidden;display:flex;flex-direction:column}.service-top{min-height:118px;padding:20px;background:linear-gradient(135deg,#0b1633,#1769ff);color:#fff;display:flex;flex-direction:column;justify-content:space-between}.service-top .tag{align-self:flex-start;border:1px solid rgba(255,255,255,.34);border-radius:999px;padding:5px 9px;font-size:.72rem;font-weight:1000;background:rgba(255,255,255,.12)}.service-top strong{font-size:1.2rem;line-height:1.35}.service-body{padding:18px;display:grid;gap:12px;flex:1}.service-body p{color:var(--muted);font-weight:650;font-size:.94rem}.point-list{display:grid;gap:7px;list-style:none}.point-list li{position:relative;padding-left:22px;color:#344054;font-size:.88rem;font-weight:700}.point-list li::before{content:"";position:absolute;left:0;top:.72em;width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(43,184,255,.12)}.service-button{margin-top:auto;display:inline-flex;min-height:46px;align-items:center;justify-content:center;border-radius:15px;background:#f1f6ff;color:var(--blue);font-weight:1000;border:1px solid rgba(23,105,255,.18)}.service-button.is-disabled{color:#667085;background:#f4f5f7;border-color:#e4e7ec;cursor:not-allowed}
+    .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--soft)}.step b{display:grid;place-items:center;width:38px;height:38px;border-radius:14px;background:var(--navy);color:#fff;margin-bottom:10px}.step h3{color:var(--navy);font-size:1.08rem;margin-bottom:6px}.step p{color:var(--muted);font-weight:650;font-size:.94rem}
+    .note-box{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--soft);padding:22px}.note-box h3{color:var(--navy);font-size:1.2rem;margin-bottom:10px}.note-box ul{display:grid;gap:8px;padding-left:1.2em;color:var(--muted);font-weight:650}.footer{margin-top:32px;background:#0b1633;color:#eaf2ff;padding:28px 0 92px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer small{color:#adc1df}.mobile-bar{position:fixed;left:12px;right:12px;bottom:12px;z-index:1001;display:none;grid-template-columns:repeat(3,1fr);gap:8px;padding:8px;background:rgba(255,255,255,.94);border:1px solid rgba(217,226,242,.9);border-radius:20px;box-shadow:0 18px 42px rgba(13,32,68,.18);backdrop-filter:blur(12px)}.mobile-bar a{display:grid;place-items:center;min-height:44px;border-radius:15px;background:#f2f6ff;color:var(--navy);font-weight:1000;font-size:.86rem}.mobile-bar a.primary{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff}
+    @media(max-width:980px){.hero-grid,.choice-grid,.service-grid,.steps{grid-template-columns:1fr 1fr}.hero-panel{order:-1}.nav{display:none}.hero{padding-top:34px}}
+    @media(max-width:640px){body{padding-bottom:88px}.header-inner{min-height:62px}.brand strong{font-size:.95rem}.hero-grid,.choice-grid,.service-grid,.steps,.status-grid,.hero-actions{grid-template-columns:1fr}.hero-panel{padding:18px}.choice-card{min-height:auto}.mobile-bar{display:grid}.footer{padding-bottom:112px}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="株式会社BRIDGE 事業ナビ">
+        <span class="brand-mark">B</span>
+        <span><strong>株式会社BRIDGE</strong><small>BUSINESS COST NAVI</small></span>
+      </a>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="#choice">悩み別に選ぶ</a>
+        <a href="#services">確認できる分野</a>
+        <a href="#notice">注意点</a>
+        <a class="primary" href="#services">外部サービス確認</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">PR｜外部サービス確認ナビ</div>
+          <h1>事業の支出と資金繰りを、<br><span>悩み別に確認。</span></h1>
+          <p class="lead">固定費、資金繰り、会計、通信、決済、業務効率化。事業者が外部サービスを探す前に、まず「どこから確認するか」を整理するページです。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#choice">今の悩みから選ぶ</a>
+            <a class="btn btn-secondary" href="#services">確認分野を見る</a>
+          </div>
+          <p class="notice-mini">株式会社BRIDGEは、審査・契約・融資・保険募集・税務判断・個別相談の代行を行いません。条件は各提供会社でご確認ください。</p>
+        </div>
+        <aside class="hero-panel" aria-label="このページの使い方">
+          <h2 class="panel-title">このページでできること</h2>
+          <div class="status-grid">
+            <div class="status-card"><small>STEP 1</small><strong>悩みに近い入口を選ぶ</strong></div>
+            <div class="status-card"><small>STEP 2</small><strong>確認ポイントを見る</strong></div>
+            <div class="status-card"><small>STEP 3</small><strong>外部サービスを比較</strong></div>
+            <div class="status-card"><small>STEP 4</small><strong>公式サイトで条件確認</strong></div>
+          </div>
+          <div class="safe-box">広告リンクを含む場合があります。申込・契約・審査・料金・利用条件は、リンク先の提供会社で確認してください。</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="choice">
+      <div class="container">
+        <div class="section-head">
+          <span class="label">CHOOSE BY ISSUE</span>
+          <h2>まず、今いちばん気になることを選んでください。</h2>
+          <p>お客さん目線では、細かい説明より「自分はどれを見ればいいか」が先です。入口を4つに絞り、迷いにくくしています。</p>
+        </div>
+        <div class="choice-grid">
+          <article class="choice-card">
+            <div class="choice-icon">資</div>
+            <h3>入金までの時間が不安</h3>
+            <p>請求書、売掛金、急な支払いなど、資金繰りの選択肢を確認したい方向け。</p>
+            <a href="#service-cashflow">資金繰りを見る →</a>
+          </article>
+          <article class="choice-card">
+            <div class="choice-icon">費</div>
+            <h3>毎月の固定費を見直したい</h3>
+            <p>通信費、電気代、サーバー、ツール費用など、継続支出を整理したい方向け。</p>
+            <a href="#service-costdown">固定費を見る →</a>
+          </article>
+          <article class="choice-card">
+            <div class="choice-icon">業</div>
+            <h3>事務作業を減らしたい</h3>
+            <p>会計、請求、決済、予約、顧客管理など、手作業を減らす候補を見たい方向け。</p>
+            <a href="#service-efficiency">効率化を見る →</a>
+          </article>
+          <article class="choice-card">
+            <div class="choice-icon">備</div>
+            <h3>今後の備えを確認したい</h3>
+            <p>法人カード、保険、セキュリティ、バックアップなど、守りの選択肢を確認。</p>
+            <a href="#service-risk">備えを見る →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="label">SERVICE CATEGORIES</span>
+          <h2>広告を入れやすい分野を、最初から整理しています。</h2>
+          <p>今後A8などで提携できた案件を、ここに差し込める設計です。現時点では安全のため、未提携リンクは仮ボタンにしています。</p>
+        </div>
+        <div class="service-grid">
+          <article id="service-cashflow" class="service-card">
+            <div class="service-top"><span class="tag">PR枠 / 資金繰り</span><strong>請求書・売掛金・資金繰り確認</strong></div>
+            <div class="service-body">
+              <p>入金前の支払い、売掛金の回収時期、短期の資金不足が気になる時の確認枠です。</p>
+              <ul class="point-list"><li>手数料・入金時期</li><li>必要書類・対象条件</li><li>契約内容と利用可否</li></ul>
+              <a class="service-button is-disabled" href="#notice" aria-disabled="true">広告リンク準備中</a>
+            </div>
+          </article>
+          <article id="service-costdown" class="service-card">
+            <div class="service-top"><span class="tag">PR枠 / 固定費</span><strong>通信費・電気代・法人サービス見直し</strong></div>
+            <div class="service-body">
+              <p>法人携帯、光回線、電気、クラウド費用など、毎月の支出を見直したい時の確認枠です。</p>
+              <ul class="point-list"><li>月額料金と初期費用</li><li>契約期間・解約条件</li><li>現在契約との比較</li></ul>
+              <a class="service-button is-disabled" href="#notice" aria-disabled="true">広告リンク準備中</a>
+            </div>
+          </article>
+          <article id="service-efficiency" class="service-card">
+            <div class="service-top"><span class="tag">PR枠 / 業務効率化</span><strong>会計・請求・決済・管理ツール</strong></div>
+            <div class="service-body">
+              <p>手入力、請求管理、入金確認、予約管理など、事務作業を軽くしたい時の確認枠です。</p>
+              <ul class="point-list"><li>操作負担とサポート範囲</li><li>無料期間・月額費用</li><li>既存運用との相性</li></ul>
+              <a class="service-button is-disabled" href="#notice" aria-disabled="true">広告リンク準備中</a>
+            </div>
+          </article>
+          <article id="service-risk" class="service-card">
+            <div class="service-top"><span class="tag">PR枠 / 守り</span><strong>法人カード・保険・セキュリティ</strong></div>
+            <div class="service-body">
+              <p>支払い管理、万一の備え、情報管理、バックアップなど、事業継続の確認枠です。</p>
+              <ul class="point-list"><li>審査・年会費・限度額</li><li>補償範囲・対象条件</li><li>規約と利用条件</li></ul>
+              <a class="service-button is-disabled" href="#notice" aria-disabled="true">広告リンク準備中</a>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><span class="tag">PR枠 / 集客</span><strong>予約・広告・集客導線</strong></div>
+            <div class="service-body">
+              <p>店舗や小規模事業で、予約受付、広告、口コミ、SNS導線を整えたい時の確認枠です。</p>
+              <ul class="point-list"><li>月額費用と成果の見方</li><li>予約受付の負担</li><li>運用に必要な作業量</li></ul>
+              <a class="service-button is-disabled" href="#notice" aria-disabled="true">広告リンク準備中</a>
+            </div>
+          </article>
+          <article class="service-card">
+            <div class="service-top"><span class="tag">PR枠 / Web基盤</span><strong>サーバー・ドメイン・Web運用</strong></div>
+            <div class="service-body">
+              <p>公式サイト、LP、メール、ドメイン、サーバーなど、Web基盤を確認したい時の枠です。</p>
+              <ul class="point-list"><li>表示速度・安定性</li><li>更新しやすさ</li><li>契約更新と料金</li></ul>
+              <a class="service-button is-disabled" href="#notice" aria-disabled="true">広告リンク準備中</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="label">HOW TO USE</span>
+          <h2>広告を見せる前に、判断順を用意しています。</h2>
+          <p>いきなり広告へ飛ばすと離脱しやすいため、悩みの整理 → 比較ポイント → 公式確認の流れにしています。</p>
+        </div>
+        <div class="steps">
+          <div class="step"><b>1</b><h3>今の悩みを選ぶ</h3><p>資金繰り、固定費、事務負担、備えの4方向から入口を選びます。</p></div>
+          <div class="step"><b>2</b><h3>比較ポイントを見る</h3><p>料金、契約条件、対象条件、作業負担を先に確認します。</p></div>
+          <div class="step"><b>3</b><h3>公式サイトで確認</h3><p>申込、審査、契約、料金、利用可否はリンク先で確認します。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="notice">
+      <div class="container">
+        <div class="note-box">
+          <h3>ご利用前の注意点</h3>
+          <ul>
+            <li>本ページには、今後広告リンク・PRリンクを掲載する場合があります。</li>
+            <li>株式会社BRIDGEは、融資、ファクタリング、保険、カード、通信、会計ソフト等の提供会社ではありません。</li>
+            <li>申込、審査、契約、料金、入金時期、補償内容、税務・会計上の判断は、各提供会社または専門家へご確認ください。</li>
+            <li>「必ず利用できる」「必ず安くなる」「審査に通る」「資金調達できる」などの保証は行いません。</li>
+            <li>このページは、事業者が外部サービスを確認する前の判断材料を整理するための情報ページです。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>株式会社BRIDGE</strong><br><small>事業者向けコスト削減・資金繰り確認ナビ</small></div>
+      <small>© BRIDGE CO., LTD. / PR links may be included.</small>
+    </div>
+  </footer>
+
+  <nav class="mobile-bar" aria-label="スマホ固定メニュー">
+    <a href="#choice">悩み別</a>
+    <a class="primary" href="#services">確認枠</a>
+    <a href="#notice">注意点</a>
+  </nav>
+</body>
+</html>
