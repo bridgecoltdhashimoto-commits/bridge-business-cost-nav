@@ -1,0 +1,18 @@
+{
+  "name": "株式会社BRIDGE 事業者向けコスト削減・資金繰り確認ナビ",
+  "short_name": "BRIDGE事業ナビ",
+  "description": "固定費、資金繰り、会計、通信、決済、業務効率化などを悩み別に確認する情報ページです。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b1633",
+  "icons": [
+    {
+      "src": "icon.svg?v=20260710-1",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
