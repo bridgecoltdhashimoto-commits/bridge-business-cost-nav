@@ -1,7 +1,7 @@
 {
-  "name": "BRIDGEコスト削減ナビ｜法人・個人事業主の電気代・LED工事比較",
+  "name": "BRIDGEコスト削減ナビ｜電気代・LED工事・事業資金の比較案内",
   "short_name": "BRIDGEコストナビ",
-  "description": "法人・個人事業主向けに、電気料金の見直しとLED照明工事業者の比較先を案内する情報サイトです。",
+  "description": "法人・個人事業主向けに、電気料金、LED照明工事、売掛金前払いサービスの確認先を案内する情報サイトです。",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -9,7 +9,7 @@
   "theme_color": "#071a35",
   "icons": [
     {
-      "src": "icon.svg?v=20260711-2",
+      "src": "icon.svg?v=20260712-1",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
