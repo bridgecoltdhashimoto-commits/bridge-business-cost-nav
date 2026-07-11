@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BRIDGEコスト削減ナビ｜法人・個人事業主の電気代・LED工事比較</title>
-  <meta name="description" content="法人・個人事業主向けに、電気料金の見直しとLED照明工事業者の比較先を分かりやすく案内します。目的に近いサービスを選び、公式サイトで条件を確認できます。">
-  <meta property="og:title" content="BRIDGEコスト削減ナビ｜電気代・LED工事比較">
-  <meta property="og:description" content="事業の電気代を見直したい方、LED照明工事業者を比較したい方のためのシンプルな案内ページです。">
+  <title>BRIDGEコスト削減ナビ｜電気代・LED工事・事業資金の比較案内</title>
+  <meta name="description" content="法人・個人事業主向けに、電気料金の見直し、LED照明工事業者の比較、売掛金前払いサービスを分かりやすく案内する自己完結型の情報サイトです。">
+  <meta property="og:title" content="BRIDGEコスト削減ナビ｜固定費・設備・資金繰りの確認先">
+  <meta property="og:description" content="電気代、LED工事、事業資金。現在の悩みに近い入口から、外部サービスの条件を確認できます。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bridgecoltdhashimoto-commits.github.io/bridge-business-cost-nav/">
   <meta name="twitter:card" content="summary">
@@ -17,87 +17,91 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="canonical" href="https://bridgecoltdhashimoto-commits.github.io/bridge-business-cost-nav/">
-  <link rel="icon" href="icon.svg?v=20260711-2" type="image/svg+xml">
-  <link rel="manifest" href="site.webmanifest?v=20260711-2">
+  <link rel="icon" href="icon.svg?v=20260712-1" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest?v=20260712-1">
   <style>
     :root{
-      --navy:#071a35;
+      --navy:#06172e;
+      --navy-2:#0b274c;
       --blue:#1266e8;
-      --cyan:#0ca6c4;
-      --green:#0b8f68;
-      --ink:#122033;
-      --muted:#5d6878;
+      --cyan:#09a8c7;
+      --green:#07845f;
+      --violet:#6957d9;
+      --ink:#142238;
+      --muted:#5f6b7c;
       --line:#dbe5f0;
-      --bg:#f4f8fc;
+      --bg:#f3f7fc;
       --card:#fff;
-      --warm:#fff8e8;
-      --shadow:0 18px 46px rgba(7,26,53,.12);
-      --soft:0 10px 28px rgba(7,26,53,.08);
-      --max:1080px;
+      --warm:#fff7df;
+      --shadow:0 22px 58px rgba(6,23,46,.13);
+      --soft:0 12px 30px rgba(6,23,46,.08);
+      --max:1120px;
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;scroll-padding-top:84px}
-    body{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff 0%,#f6f9fd 54%,#eef4fa 100%);line-height:1.72;letter-spacing:.01em}
+    html{scroll-behavior:smooth;scroll-padding-top:86px}
+    body{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff 0%,#f5f8fc 48%,#edf3fa 100%);line-height:1.72;letter-spacing:.01em}
     a{color:inherit}
     img{display:block;max-width:100%;height:auto}
     .container{width:min(var(--max),92%);margin:0 auto}
     .skip-link{position:absolute;left:-9999px;top:8px;background:#fff;color:#000;padding:10px 14px;border-radius:10px;z-index:9999}.skip-link:focus{left:8px}
-    .site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(7,26,53,.09)}
-    .header-inner{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(6,23,46,.09)}
+    .header-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
     .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--navy)}
-    .brand-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--navy),var(--blue),var(--cyan));font-weight:1000;box-shadow:0 10px 22px rgba(18,102,232,.22)}
-    .brand strong{display:block;font-size:1rem;line-height:1.2}.brand small{display:block;color:var(--muted);font-size:.7rem;font-weight:900;letter-spacing:.08em;margin-top:3px}
-    .header-nav{display:flex;align-items:center;gap:8px}.header-nav a{min-height:40px;display:inline-flex;align-items:center;padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--navy);font-weight:900;font-size:.86rem;border:1px solid rgba(18,102,232,.16);background:#fff}.header-nav a.primary{color:#fff;border:none;background:linear-gradient(135deg,var(--blue),var(--cyan))}
-    .hero{padding:52px 0 26px;background:radial-gradient(circle at 12% 10%,rgba(12,166,196,.18),transparent 34%),radial-gradient(circle at 88% 0%,rgba(18,102,232,.17),transparent 30%)}
-    .hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(310px,.92fr);gap:28px;align-items:center}
-    .pr-label{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;background:#fff;border:1px solid rgba(18,102,232,.18);color:var(--navy);font-size:.78rem;font-weight:1000;margin-bottom:14px;box-shadow:var(--soft)}
-    h1{font-size:clamp(2.25rem,5.5vw,4.55rem);line-height:1.08;color:var(--navy);font-weight:1000;letter-spacing:-.035em;margin-bottom:16px}
-    h1 span{background:linear-gradient(90deg,var(--blue),var(--cyan),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .hero-lead{max-width:680px;color:#34435a;font-size:1.08rem;font-weight:700;margin-bottom:20px}
-    .hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:650px}
-    .hero-action{min-height:62px;display:flex;align-items:center;justify-content:center;padding:13px 16px;border-radius:18px;text-decoration:none;text-align:center;font-weight:1000;line-height:1.35;box-shadow:var(--soft)}
-    .hero-action.primary{color:#fff;background:linear-gradient(135deg,var(--blue),var(--cyan))}.hero-action.secondary{color:var(--navy);background:#fff;border:2px solid rgba(18,102,232,.17)}
-    .hero-note{margin-top:14px;color:var(--muted);font-size:.84rem;font-weight:700}
-    .hero-panel{background:rgba(255,255,255,.92);border:1px solid rgba(219,229,240,.92);border-radius:28px;padding:22px;box-shadow:var(--shadow)}
-    .hero-panel h2{font-size:1.28rem;color:var(--navy);margin-bottom:13px}
-    .check-list{list-style:none;display:grid;gap:10px}.check-list li{position:relative;padding:12px 12px 12px 44px;border-radius:16px;background:#f7faff;border:1px solid var(--line);color:#33435a;font-weight:800}.check-list li::before{content:"✓";position:absolute;left:14px;top:12px;width:22px;height:22px;display:grid;place-items:center;border-radius:50%;color:#fff;background:var(--green);font-size:.78rem;font-weight:1000}
-    .panel-caption{margin-top:12px;padding:12px 14px;border-radius:15px;background:var(--warm);border:1px solid #f5d98e;color:#654b0b;font-size:.86rem;font-weight:800}
-    section{padding:36px 0}.section-head{margin-bottom:20px}.eyebrow{display:inline-block;color:var(--blue);font-size:.77rem;font-weight:1000;letter-spacing:.13em;margin-bottom:7px}.section-head h2{font-size:clamp(1.7rem,3.8vw,2.65rem);line-height:1.25;color:var(--navy);margin-bottom:9px}.section-head p{max-width:780px;color:var(--muted);font-weight:700}
-    .choice-section{padding-top:26px}
-    .choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-    .choice-card{position:relative;overflow:hidden;background:#fff;border:2px solid var(--line);border-radius:28px;padding:22px;box-shadow:var(--shadow)}
-    .choice-card::before{content:"";position:absolute;inset:0 0 auto;height:7px;background:linear-gradient(90deg,var(--blue),var(--cyan))}.choice-card.led::before{background:linear-gradient(90deg,var(--green),var(--cyan))}
-    .choice-tag{display:inline-flex;padding:6px 10px;border-radius:999px;background:#eaf2ff;color:#174f9e;font-size:.74rem;font-weight:1000;margin-bottom:13px}.choice-card.led .choice-tag{background:#e8f8f2;color:#0a6d52}
-    .choice-card h3{font-size:1.45rem;line-height:1.35;color:var(--navy);margin-bottom:8px}.choice-card>p{color:var(--muted);font-weight:700;margin-bottom:14px}
-    .fit-list{list-style:none;display:grid;gap:8px;margin-bottom:16px}.fit-list li{position:relative;padding-left:23px;color:#34435a;font-size:.94rem;font-weight:750}.fit-list li::before{content:"";position:absolute;left:1px;top:.72em;width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(12,166,196,.12)}
-    .ad-box{background:#f8fbff;border:1px solid var(--line);border-radius:20px;padding:16px;text-align:center}.ad-box .ad-label{display:inline-flex;margin-bottom:10px;padding:4px 9px;border-radius:999px;color:#fff;background:var(--navy);font-size:.7rem;font-weight:1000;letter-spacing:.08em}.ad-box .instruction{display:block;margin-bottom:12px;color:#34435a;font-size:.88rem;font-weight:900}.ad-box a{display:inline-block;max-width:100%}
-    .electric-banner{display:inline-flex!important;justify-content:center;max-width:100%;border-radius:14px;overflow:hidden;box-shadow:0 12px 26px rgba(7,26,53,.15);transition:.2s}.electric-banner:hover,.electric-banner:focus-visible{transform:translateY(-2px);outline:4px solid rgba(18,102,232,.18);outline-offset:4px}.electric-banner img{width:min(300px,100%);height:auto}
-    .led-link{display:flex!important;align-items:center;justify-content:center;min-height:66px;width:100%;padding:15px 16px;border-radius:18px;color:#fff!important;text-decoration:none;background:linear-gradient(135deg,var(--green),var(--cyan));font-weight:1000;font-size:1rem;line-height:1.45;box-shadow:0 15px 30px rgba(11,143,104,.23);transition:.2s}.led-link:hover,.led-link:focus-visible{transform:translateY(-2px);outline:4px solid rgba(11,143,104,.18);outline-offset:4px}
-    .after-note{margin-top:12px;color:var(--muted);font-size:.8rem;font-weight:700;text-align:left}
-    .compare-table{display:grid;grid-template-columns:1.05fr 1fr 1fr;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--soft)}.compare-table>div{padding:15px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:750}.compare-table>div:nth-child(3n){border-right:0}.compare-table>div:nth-last-child(-n+3){border-bottom:0}.compare-table .head{background:#eef5ff;color:var(--navy);font-weight:1000}.compare-table .label-cell{color:var(--navy);font-weight:1000}
-    .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--soft)}.step b{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;background:var(--navy);color:#fff;margin-bottom:10px}.step h3{color:var(--navy);font-size:1.08rem;margin-bottom:6px}.step p{color:var(--muted);font-size:.93rem;font-weight:700}
+    .brand-mark{width:44px;height:44px;border-radius:15px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--navy),var(--blue),var(--cyan));font-weight:1000;box-shadow:0 10px 24px rgba(18,102,232,.24)}
+    .brand strong{display:block;font-size:1rem;line-height:1.2}.brand small{display:block;color:var(--muted);font-size:.68rem;font-weight:900;letter-spacing:.09em;margin-top:3px}
+    .header-nav{display:flex;align-items:center;gap:7px}.header-nav a{min-height:40px;display:inline-flex;align-items:center;padding:8px 13px;border-radius:999px;text-decoration:none;color:var(--navy);font-weight:900;font-size:.82rem;border:1px solid rgba(18,102,232,.15);background:#fff}.header-nav a.primary{color:#fff;border:none;background:linear-gradient(135deg,var(--blue),var(--cyan))}
+    .hero{position:relative;overflow:hidden;padding:58px 0 36px;color:#fff;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 58%,#104e72 100%)}
+    .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(2px);pointer-events:none}.hero::before{width:420px;height:420px;right:-130px;top:-210px;background:radial-gradient(circle,rgba(9,168,199,.32),transparent 68%)}.hero::after{width:360px;height:360px;left:-180px;bottom:-250px;background:radial-gradient(circle,rgba(105,87,217,.25),transparent 68%)}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(310px,.85fr);gap:34px;align-items:center}
+    .pr-label{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:.78rem;font-weight:1000;margin-bottom:16px;backdrop-filter:blur(10px)}
+    h1{font-size:clamp(2.35rem,5.8vw,4.8rem);line-height:1.07;color:#fff;font-weight:1000;letter-spacing:-.04em;margin-bottom:18px}
+    h1 span{background:linear-gradient(90deg,#7edcff,#8ff0d0,#ffd67c);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero-lead{max-width:700px;color:#dbe9f7;font-size:1.08rem;font-weight:700;margin-bottom:23px}
+    .hero-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:760px}
+    .hero-action{min-height:64px;display:flex;align-items:center;justify-content:center;padding:13px 12px;border-radius:18px;text-decoration:none;text-align:center;font-weight:1000;line-height:1.32;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.19);box-shadow:0 14px 34px rgba(0,0,0,.18);transition:.2s}.hero-action:hover,.hero-action:focus-visible{transform:translateY(-2px);background:rgba(255,255,255,.17);outline:3px solid rgba(255,255,255,.22);outline-offset:3px}.hero-action.primary{background:linear-gradient(135deg,var(--blue),var(--cyan));border:none}.hero-action.cash{background:linear-gradient(135deg,var(--violet),#8776f3);border:none}
+    .hero-note{margin-top:15px;color:#bdd0e3;font-size:.84rem;font-weight:700}
+    .hero-panel{background:rgba(255,255,255,.96);color:var(--ink);border:1px solid rgba(255,255,255,.34);border-radius:30px;padding:23px;box-shadow:0 28px 65px rgba(0,0,0,.25)}
+    .hero-panel h2{font-size:1.28rem;color:var(--navy);margin-bottom:14px}
+    .check-list{list-style:none;display:grid;gap:10px}.check-list li{position:relative;padding:12px 12px 12px 44px;border-radius:16px;background:#f6f9fd;border:1px solid var(--line);color:#33435a;font-weight:800}.check-list li::before{content:"✓";position:absolute;left:14px;top:12px;width:22px;height:22px;display:grid;place-items:center;border-radius:50%;color:#fff;background:linear-gradient(135deg,var(--green),var(--cyan));font-size:.78rem;font-weight:1000}
+    .panel-caption{margin-top:12px;padding:12px 14px;border-radius:15px;background:var(--warm);border:1px solid #f2d88c;color:#654b0b;font-size:.85rem;font-weight:800}
+    section{padding:42px 0}.section-head{margin-bottom:23px}.eyebrow{display:inline-block;color:var(--blue);font-size:.77rem;font-weight:1000;letter-spacing:.13em;margin-bottom:7px}.section-head h2{font-size:clamp(1.75rem,3.9vw,2.7rem);line-height:1.24;color:var(--navy);margin-bottom:9px}.section-head p{max-width:830px;color:var(--muted);font-weight:700}
+    .choice-section{padding-top:38px}.choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+    .choice-card{position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:28px;padding:22px;box-shadow:var(--shadow)}
+    .choice-card::before{content:"";position:absolute;inset:0 0 auto;height:7px;background:linear-gradient(90deg,var(--blue),var(--cyan))}.choice-card.led::before{background:linear-gradient(90deg,var(--green),var(--cyan))}.choice-card.cash::before{background:linear-gradient(90deg,var(--violet),#9e8ff7)}
+    .choice-tag{align-self:flex-start;display:inline-flex;padding:6px 10px;border-radius:999px;background:#eaf2ff;color:#174f9e;font-size:.73rem;font-weight:1000;margin-bottom:13px}.choice-card.led .choice-tag{background:#e8f8f2;color:#0a6d52}.choice-card.cash .choice-tag{background:#f0edff;color:#5644bd}
+    .choice-card h3{font-size:1.38rem;line-height:1.34;color:var(--navy);margin-bottom:8px}.choice-card>p{color:var(--muted);font-weight:700;margin-bottom:14px}
+    .fit-list{list-style:none;display:grid;gap:8px;margin-bottom:18px}.fit-list li{position:relative;padding-left:23px;color:#34435a;font-size:.91rem;font-weight:750}.fit-list li::before{content:"";position:absolute;left:1px;top:.72em;width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(9,168,199,.12)}.choice-card.led .fit-list li::before{background:var(--green);box-shadow:0 0 0 4px rgba(7,132,95,.12)}.choice-card.cash .fit-list li::before{background:var(--violet);box-shadow:0 0 0 4px rgba(105,87,217,.12)}
+    .ad-box{margin-top:auto;background:#f7faff;border:1px solid var(--line);border-radius:21px;padding:15px;text-align:center}.ad-box .ad-label{display:inline-flex;margin-bottom:9px;padding:4px 9px;border-radius:999px;color:#fff;background:var(--navy);font-size:.7rem;font-weight:1000;letter-spacing:.08em}.ad-box .instruction{display:block;margin-bottom:12px;color:#34435a;font-size:.86rem;font-weight:900}.ad-box a{display:inline-block;max-width:100%}
+    .official-banner{display:inline-flex!important;justify-content:center;max-width:100%;border-radius:15px;overflow:hidden;box-shadow:0 12px 27px rgba(6,23,46,.16);transition:.2s}.official-banner:hover,.official-banner:focus-visible{transform:translateY(-2px);outline:4px solid rgba(18,102,232,.18);outline-offset:4px}.official-banner img{width:min(300px,100%);height:auto}
+    .led-link{display:flex!important;align-items:center;justify-content:center;min-height:74px;width:100%;padding:15px 16px;border-radius:18px;color:#fff!important;text-decoration:none;background:linear-gradient(135deg,var(--green),var(--cyan));font-weight:1000;font-size:.98rem;line-height:1.45;box-shadow:0 15px 30px rgba(7,132,95,.23);transition:.2s}.led-link:hover,.led-link:focus-visible{transform:translateY(-2px);outline:4px solid rgba(7,132,95,.18);outline-offset:4px}
+    .after-note{margin-top:12px;color:var(--muted);font-size:.78rem;font-weight:700;text-align:left}
+    .compare-wrap{overflow-x:auto;border-radius:23px;box-shadow:var(--soft)}.compare-table{min-width:760px;display:grid;grid-template-columns:1.05fr repeat(3,1fr);background:#fff;border:1px solid var(--line);border-radius:23px;overflow:hidden}.compare-table>div{padding:15px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:750}.compare-table>div:nth-child(4n){border-right:0}.compare-table>div:nth-last-child(-n+4){border-bottom:0}.compare-table .head{background:#edf4ff;color:var(--navy);font-weight:1000}.compare-table .head.cash-head{background:#f1efff}.compare-table .label-cell{color:var(--navy);font-weight:1000}
+    .decision-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.decision-card{background:#fff;border:1px solid var(--line);border-radius:23px;padding:20px;box-shadow:var(--soft)}.decision-card b{display:inline-flex;padding:5px 9px;border-radius:999px;background:#edf4ff;color:var(--blue);font-size:.72rem;margin-bottom:10px}.decision-card h3{color:var(--navy);font-size:1.08rem;margin-bottom:7px}.decision-card p{color:var(--muted);font-size:.91rem;font-weight:700}
+    .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.step{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--soft)}.step b{width:39px;height:39px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;margin-bottom:10px}.step h3{color:var(--navy);font-size:1.08rem;margin-bottom:6px}.step p{color:var(--muted);font-size:.92rem;font-weight:700}
     .faq{display:grid;gap:10px}.faq details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px 17px;box-shadow:var(--soft)}.faq summary{cursor:pointer;color:var(--navy);font-weight:1000}.faq p{padding-top:10px;color:var(--muted);font-weight:700}
-    .notice-box{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:var(--soft)}.notice-box h2{color:var(--navy);font-size:1.35rem;margin-bottom:10px}.notice-box ul{padding-left:1.25em;display:grid;gap:8px;color:var(--muted);font-size:.91rem;font-weight:700}
-    .footer{margin-top:30px;background:var(--navy);color:#eef5ff;padding:28px 0 104px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer small{color:#b9c9de}
-    .mobile-bar{position:fixed;left:10px;right:10px;bottom:10px;z-index:1100;display:none;grid-template-columns:1fr 1fr;gap:8px;padding:8px;border-radius:20px;background:rgba(255,255,255,.95);border:1px solid rgba(219,229,240,.95);box-shadow:0 18px 44px rgba(7,26,53,.23);backdrop-filter:blur(12px)}.mobile-bar a{min-height:50px;display:grid;place-items:center;padding:8px;border-radius:14px;text-decoration:none;text-align:center;font-size:.83rem;font-weight:1000;line-height:1.25}.mobile-bar a:first-child{color:#fff;background:linear-gradient(135deg,var(--blue),var(--cyan))}.mobile-bar a:last-child{color:#fff;background:linear-gradient(135deg,var(--green),var(--cyan))}
+    .notice-box{background:#fff;border:1px solid var(--line);border-radius:25px;padding:23px;box-shadow:var(--soft)}.notice-box h2{color:var(--navy);font-size:1.35rem;margin-bottom:10px}.notice-box ul{padding-left:1.25em;display:grid;gap:8px;color:var(--muted);font-size:.9rem;font-weight:700}
+    .footer{margin-top:30px;background:var(--navy);color:#eef5ff;padding:30px 0 108px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer small{color:#b9c9de}
+    .mobile-bar{position:fixed;left:9px;right:9px;bottom:9px;z-index:1100;display:none;grid-template-columns:repeat(3,1fr);gap:6px;padding:7px;border-radius:20px;background:rgba(255,255,255,.96);border:1px solid rgba(219,229,240,.96);box-shadow:0 18px 44px rgba(6,23,46,.24);backdrop-filter:blur(12px)}.mobile-bar a{min-height:51px;display:grid;place-items:center;padding:7px 4px;border-radius:14px;text-decoration:none;text-align:center;color:#fff;font-size:.75rem;font-weight:1000;line-height:1.2}.mobile-bar a:nth-child(1){background:linear-gradient(135deg,var(--blue),var(--cyan))}.mobile-bar a:nth-child(2){background:linear-gradient(135deg,var(--green),var(--cyan))}.mobile-bar a:nth-child(3){background:linear-gradient(135deg,var(--violet),#8876f4)}
     .tracking-pixel{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
-    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-panel{order:-1}.header-nav{display:none}}
-    @media(max-width:680px){body{padding-bottom:88px}.header-inner{min-height:62px}.brand strong{font-size:.94rem}.brand small{font-size:.62rem}.hero{padding:30px 0 18px}.hero-grid{gap:18px}.hero-panel{padding:17px;border-radius:22px}.hero-panel h2{font-size:1.1rem}.check-list li{font-size:.9rem}.hero-actions,.choice-grid,.steps{grid-template-columns:1fr}.hero-action{min-height:58px}.choice-card{padding:18px;border-radius:22px}.choice-card h3{font-size:1.27rem}.ad-box{padding:13px}.led-link{font-size:.95rem}.compare-table{grid-template-columns:.9fr 1fr 1fr;font-size:.78rem}.compare-table>div{padding:10px 7px}.mobile-bar{display:grid}.footer{padding-bottom:116px}}
+    @media(max-width:980px){.hero-grid{grid-template-columns:1fr}.hero-panel{max-width:760px}.choice-grid{grid-template-columns:1fr 1fr}.choice-card.cash{grid-column:1/-1}.choice-card.cash .ad-box{max-width:560px;width:100%;margin-left:auto;margin-right:auto}.header-nav{display:none}}
+    @media(max-width:700px){body{padding-bottom:91px}.header-inner{min-height:63px}.brand strong{font-size:.92rem}.brand small{font-size:.6rem}.brand-mark{width:40px;height:40px}.hero{padding:34px 0 24px}.hero-grid{gap:20px}.hero-panel{padding:18px;border-radius:23px}.hero-panel h2{font-size:1.1rem}.check-list li{font-size:.89rem}.hero-actions,.choice-grid,.decision-grid,.steps{grid-template-columns:1fr}.choice-card.cash{grid-column:auto}.hero-action{min-height:58px}.choice-card{padding:18px;border-radius:23px}.choice-card h3{font-size:1.24rem}.ad-box{padding:13px}.led-link{font-size:.92rem}.mobile-bar{display:grid}.footer{padding-bottom:122px}.section-head h2{font-size:1.75rem}}
+    @media(max-width:390px){.mobile-bar a{font-size:.68rem}.brand small{display:none}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
+
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="BRIDGEコスト削減ナビ トップ">
         <span class="brand-mark">B</span>
-        <span><strong>BRIDGEコスト削減ナビ</strong><small>BUSINESS COST GUIDE</small></span>
+        <span><strong>BRIDGEコスト削減ナビ</strong><small>BUSINESS COST &amp; CASH FLOW GUIDE</small></span>
       </a>
       <nav class="header-nav" aria-label="メインメニュー">
-        <a href="#choose">2つから選ぶ</a>
+        <a href="#choose">3つから選ぶ</a>
         <a href="#compare">違いを確認</a>
-        <a class="primary" href="#choose">無料比較先を見る</a>
+        <a class="primary" href="#choose">公式サービスを見る</a>
       </nav>
     </div>
   </header>
@@ -106,24 +110,26 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="pr-label">PR｜広告リンクを含みます</span>
-          <h1>事業の電気コスト、<br><span>今のままで大丈夫？</span></h1>
-          <p class="hero-lead">「電気料金そのものを見直したい」「LED照明工事の業者を比較したい」。目的に近い方を選ぶだけで、公式サービスへ進めます。</p>
+          <span class="pr-label">PR｜アフィリエイト広告を含みます</span>
+          <h1>固定費と資金繰りを、<br><span>目的別に確認。</span></h1>
+          <p class="hero-lead">電気料金、LED照明工事、売掛金を活用した事業資金の確認先を、法人・個人事業主向けに整理しました。現在の悩みに近い入口を選んでください。</p>
           <div class="hero-actions">
-            <a class="hero-action primary" href="#electric">電気料金を見直したい</a>
-            <a class="hero-action secondary" href="#led">LED工事業者を探したい</a>
+            <a class="hero-action primary" href="#electric">電気料金を見直す</a>
+            <a class="hero-action" href="#led">LED工事を比較</a>
+            <a class="hero-action cash" href="#cashflow">事業資金を確認</a>
           </div>
-          <p class="hero-note">株式会社BRIDGEへの電話・相談は不要です。申込・見積・契約はリンク先の提供会社で行われます。</p>
+          <p class="hero-note">株式会社BRIDGEへの電話・相談は不要です。申込・見積・契約・審査はリンク先の提供会社で行われます。</p>
         </div>
+
         <aside class="hero-panel" aria-label="このページが向いている方">
-          <h2>こんな事業者向けです</h2>
+          <h2>こんな悩みを整理できます</h2>
           <ul class="check-list">
             <li>店舗・事務所・工場の電気代が気になる</li>
-            <li>電力会社や料金プランを比較したい</li>
-            <li>LED化を検討しているが業者選びで迷う</li>
-            <li>複数社の条件を見てから判断したい</li>
+            <li>LED化の費用や依頼先を比較したい</li>
+            <li>入金待ちの売掛金があり資金繰りを確認したい</li>
+            <li>営業電話ではなく、自分で条件を確認したい</li>
           </ul>
-          <div class="panel-caption">どちらも、条件・対象地域・契約内容を公式サイトで確認してから判断してください。</div>
+          <div class="panel-caption">各サービスの対象、費用、手数料、審査、契約条件は、必ず広告主の公式サイトで確認してください。</div>
         </aside>
       </div>
     </section>
@@ -131,26 +137,26 @@
     <section id="choose" class="choice-section">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">CHOOSE ONE</span>
-          <h2>今の目的に近い方を選んでください</h2>
-          <p>説明を長く読まなくても判断できるよう、入口を2つだけに絞っています。</p>
+          <span class="eyebrow">CHOOSE YOUR PURPOSE</span>
+          <h2>今の目的に近い入口を選んでください</h2>
+          <p>広告を無計画に並べず、用途の異なる3つの選択肢に分けています。該当しないサービスへ無理に申し込む必要はありません。</p>
         </div>
 
         <div class="choice-grid">
           <article id="electric" class="choice-card">
-            <span class="choice-tag">PR｜電気料金の見直し</span>
-            <h3>毎月の電気代を見直したい</h3>
-            <p>現在の利用状況に合う電力会社・料金プランを比較したい方向けです。</p>
+            <span class="choice-tag">PR｜毎月の固定費</span>
+            <h3>電気料金を見直したい</h3>
+            <p>現在の利用状況に合う電力会社や料金プランを比較したい方向けです。</p>
             <ul class="fit-list">
-              <li>店舗や事務所の電気料金が高い</li>
-              <li>電力切替の手続きをまとめて相談したい</li>
+              <li>店舗・事務所の電気料金が高い</li>
               <li>法人向けプランを確認したい</li>
+              <li>切替条件をまとめて確認したい</li>
             </ul>
             <div class="ad-box">
               <span class="ad-label">広告</span>
-              <span class="instruction">下の公式バナーを押して、料金比較の条件を確認</span>
-              <a class="electric-banner" href="https://px.a8.net/svt/ejp?a8mat=4B7XX5+8G8IWI+3SPO+TU8U9" rel="nofollow sponsored">
-                <img border="0" width="300" height="250" alt="電気料金プラン比較サービスの公式広告" src="https://www22.a8.net/svt/bgt?aid=260711033511&wid=001&eno=01&mid=s00000017718005012000&mc=1">
+              <span class="instruction">下の公式広告を押して、対象条件を確認</span>
+              <a class="official-banner" href="https://px.a8.net/svt/ejp?a8mat=4B7XX5+8G8IWI+3SPO+TU8U9" rel="nofollow sponsored">
+                <img border="0" width="300" height="250" alt="電気料金プラン比較サービスの公式広告" src="https://www22.a8.net/svt/bgt?aid=260711033511&amp;wid=001&amp;eno=01&amp;mid=s00000017718005012000&amp;mc=1">
               </a>
               <img class="tracking-pixel" border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7XX5+8G8IWI+3SPO+TU8U9" alt="">
               <p class="after-note">法人・個人とも対象です。供給エリア、現在の契約、切替条件はリンク先で確認してください。</p>
@@ -158,20 +164,40 @@
           </article>
 
           <article id="led" class="choice-card led">
-            <span class="choice-tag">PR｜LED照明工事業者比較</span>
+            <span class="choice-tag">PR｜設備の見直し</span>
             <h3>LED工事業者を比較したい</h3>
             <p>店舗・事務所・工場などのLED照明工事を、条件に合う業者から比較したい方向けです。</p>
             <ul class="fit-list">
               <li>LED化の費用や工事内容を比較したい</li>
-              <li>業者選びに時間をかけたくない</li>
-              <li>法人・個人事業主として具体的に検討中</li>
+              <li>業者選びの時間を減らしたい</li>
+              <li>具体的に工事を検討している</li>
             </ul>
             <div class="ad-box">
               <span class="ad-label">広告</span>
               <span class="instruction">具体的にLED工事を検討している方はこちら</span>
-              <a class="led-link" href="https://px.a8.net/svt/ejp?a8mat=4B7XX5+8GTYIA+2LHA+1TK94Y" rel="nofollow sponsored">【LED照明工事業者探しならEMEAO!】ご希望にあった優良企業を無料で紹介します</a>
+              <a class="led-link" href="https://px.a8.net/svt/ejp?a8mat=4B7XX5+8GTYIA+2LHA+1TK94Y" rel="nofollow sponsored">LED照明工事業者の比較先を公式サイトで確認する</a>
               <img class="tracking-pixel" border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4B7XX5+8GTYIA+2LHA+1TK94Y" alt="">
               <p class="after-note">法人・個人事業主向けです。問い合わせ後、業者または運営会社から連絡があります。</p>
+            </div>
+          </article>
+
+          <article id="cashflow" class="choice-card cash">
+            <span class="choice-tag">PR｜事業資金の確認</span>
+            <h3>売掛金を活用した資金調達を確認したい</h3>
+            <p>法人・個人事業主で、入金前の売掛金を保有し、売掛金前払いサービスの条件を確認したい方向けです。</p>
+            <ul class="fit-list">
+              <li>商品・サービス提供済みの売掛金がある</li>
+              <li>WEBで見積条件を確認したい</li>
+              <li>本人確認や売掛金確認に対応できる</li>
+            </ul>
+            <div class="ad-box">
+              <span class="ad-label">広告</span>
+              <span class="instruction">下の公式広告を押して、無料見積の対象条件を確認</span>
+              <a class="official-banner" href="https://px.a8.net/svt/ejp?a8mat=4B7YP2+6AU69E+4JGG+BXYE9" rel="nofollow sponsored">
+                <img border="0" width="300" height="250" alt="法人・個人事業主向け売掛金前払いサービスの公式広告" src="https://www20.a8.net/svt/bgt?aid=260712038381&amp;wid=001&amp;eno=01&amp;mid=s00000021184002006000&amp;mc=1">
+              </a>
+              <img class="tracking-pixel" border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7YP2+6AU69E+4JGG+BXYE9" alt="">
+              <p class="after-note">広告主を初めて利用する企業・個人事業主が対象です。見積後の本人確認・売掛金確認など、成果・利用条件はリンク先で確認してください。</p>
             </div>
           </article>
         </div>
@@ -182,14 +208,30 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">QUICK COMPARISON</span>
-          <h2>どちらを選ぶか迷った場合</h2>
-          <p>目的が違います。電気料金そのものを見直すのか、LED工事業者を探すのかで選んでください。</p>
+          <h2>3つのサービスは目的が異なります</h2>
+          <p>固定費削減、設備工事、資金繰りを混同せず、現在の目的に合うものだけを選んでください。</p>
         </div>
-        <div class="compare-table" role="table" aria-label="サービス比較">
-          <div class="head">比較項目</div><div class="head">電気料金見直し</div><div class="head">LED工事業者比較</div>
-          <div class="label-cell">主な目的</div><div>電力会社・料金プランの比較</div><div>LED工事業者の比較・紹介</div>
-          <div class="label-cell">向いている人</div><div>毎月の電気代を見直したい</div><div>具体的にLED工事を検討中</div>
-          <div class="label-cell">次の流れ</div><div>利用状況を入力して提案確認</div><div>要望を入力して業者紹介を確認</div>
+        <div class="compare-wrap">
+          <div class="compare-table" role="table" aria-label="サービス比較">
+            <div class="head">比較項目</div><div class="head">電気料金</div><div class="head">LED工事</div><div class="head cash-head">売掛金前払い</div>
+            <div class="label-cell">主な目的</div><div>電力会社・料金プランの比較</div><div>LED工事業者の比較・紹介</div><div>売掛金を活用した資金調達条件の確認</div>
+            <div class="label-cell">向いている人</div><div>毎月の電気代を見直したい</div><div>具体的にLED工事を検討中</div><div>事業上の売掛金を保有している</div>
+            <div class="label-cell">次の流れ</div><div>利用状況を入力して提案確認</div><div>要望を入力して業者紹介を確認</div><div>WEB見積後に本人・売掛金確認</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">BEFORE YOU APPLY</span>
+          <h2>申込前に確認するポイント</h2>
+        </div>
+        <div class="decision-grid">
+          <div class="decision-card"><b>固定費</b><h3>現在の請求内容を確認</h3><p>電気料金は使用量、契約種別、地域、時期によって異なります。現在の明細と比較して判断してください。</p></div>
+          <div class="decision-card"><b>設備工事</b><h3>工事内容と見積範囲を確認</h3><p>LED工事は現場条件で費用が変わります。工事範囲、保証、追加費用を広告主・紹介業者へ確認してください。</p></div>
+          <div class="decision-card"><b>資金繰り</b><h3>手数料と契約条件を確認</h3><p>売掛金前払いは融資とは異なりますが、審査や契約条件があります。費用と入金条件を確認して判断してください。</p></div>
         </div>
       </div>
     </section>
@@ -201,9 +243,9 @@
           <h2>利用の流れ</h2>
         </div>
         <div class="steps">
-          <div class="step"><b>1</b><h3>目的を選ぶ</h3><p>電気料金の見直しか、LED工事業者の比較かを選びます。</p></div>
-          <div class="step"><b>2</b><h3>公式サイトで入力</h3><p>現在の状況や希望条件を、リンク先のフォームへ入力します。</p></div>
-          <div class="step"><b>3</b><h3>条件を確認して判断</h3><p>料金、対象地域、工事内容、契約条件を確認して判断します。</p></div>
+          <div class="step"><b>1</b><h3>目的を選ぶ</h3><p>固定費、設備工事、事業資金のうち、現在の目的に近い入口を選びます。</p></div>
+          <div class="step"><b>2</b><h3>公式サイトで確認</h3><p>対象、料金、手数料、地域、必要書類などをリンク先で確認します。</p></div>
+          <div class="step"><b>3</b><h3>条件に納得して申込</h3><p>内容を理解し、必要な場合のみ広告主サイトから手続きを進めてください。</p></div>
         </div>
       </div>
     </section>
@@ -215,8 +257,9 @@
           <h2>よくある質問</h2>
         </div>
         <div class="faq">
-          <details><summary>株式会社BRIDGEへ相談や見積依頼をするのですか？</summary><p>いいえ。株式会社BRIDGEは紹介サイトの運営者です。相談、見積、申込、契約はリンク先の提供会社で行われます。</p></details>
-          <details><summary>必ず電気料金が安くなりますか？</summary><p>保証はありません。現在の契約、使用量、地域、選択するプランによって結果は異なります。公式サイトの提案内容と条件をご確認ください。</p></details>
+          <details><summary>株式会社BRIDGEへ相談や見積依頼をするのですか？</summary><p>いいえ。株式会社BRIDGEは紹介サイトの運営者です。相談、見積、申込、契約、審査はリンク先の提供会社で行われます。</p></details>
+          <details><summary>必ず費用が安くなったり、資金調達できたりしますか？</summary><p>保証はありません。契約状況、利用条件、地域、審査、売掛金の内容などによって結果は異なります。公式サイトの条件をご確認ください。</p></details>
+          <details><summary>売掛金前払いサービスは誰でも利用できますか？</summary><p>企業・個人事業主など事業者向けです。事業上の売掛金が必要で、本人確認や売掛金確認などの条件があります。詳細は広告主サイトで確認してください。</p></details>
           <details><summary>LED工事をまだ具体的に考えていなくても利用できますか？</summary><p>LED工事業者比較は、法人・個人事業主として具体的に業者を探している方向けです。情報収集だけの問い合わせは避けてください。</p></details>
           <details><summary>個人情報は株式会社BRIDGEに送られますか？</summary><p>本ページには入力フォームを設置していません。申込情報は、リンク先の提供会社のサイトで入力します。</p></details>
         </div>
@@ -229,9 +272,10 @@
           <h2>広告・ご利用上の注意</h2>
           <ul>
             <li>本ページにはアフィリエイト広告（PR）が含まれます。</li>
-            <li>株式会社BRIDGEは、電力会社、LED工事会社、見積・業者紹介サービスの提供会社ではありません。</li>
-            <li>申込、見積、契約、料金、工事内容、対象地域、利用可否はリンク先の提供会社で確認してください。</li>
-            <li>電気料金の削減、工事費用、契約成立、その他の成果を保証するものではありません。</li>
+            <li>株式会社BRIDGEは、電力会社、LED工事会社、業者紹介会社、金融機関、売掛金前払いサービスの提供会社ではありません。</li>
+            <li>株式会社BRIDGEは、見積、工事、融資、審査、契約、資金提供、個別相談を行いません。</li>
+            <li>申込、見積、契約、料金、手数料、工事内容、審査、対象地域、利用可否はリンク先の提供会社で確認してください。</li>
+            <li>電気料金の削減、工事費用、契約成立、資金調達、入金時期、その他の成果を保証するものではありません。</li>
             <li>広告リンクの利用により株式会社BRIDGEが成果報酬を受け取る場合があります。</li>
           </ul>
         </div>
@@ -247,8 +291,9 @@
   </footer>
 
   <nav class="mobile-bar" aria-label="スマートフォン用固定メニュー">
-    <a href="#electric">電気料金を見直す</a>
-    <a href="#led">LED業者を探す</a>
+    <a href="#electric">電気料金</a>
+    <a href="#led">LED工事</a>
+    <a href="#cashflow">事業資金</a>
   </nav>
 </body>
 </html>
