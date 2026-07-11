@@ -1,15 +1,15 @@
 {
-  "name": "株式会社BRIDGE 事業者向けコスト削減・資金繰り確認ナビ",
-  "short_name": "BRIDGE事業ナビ",
-  "description": "固定費、資金繰り、会計、通信、決済、業務効率化などを悩み別に確認する情報ページです。",
+  "name": "BRIDGEコスト削減ナビ｜法人・個人事業主の電気代・LED工事比較",
+  "short_name": "BRIDGEコストナビ",
+  "description": "法人・個人事業主向けに、電気料金の見直しとLED照明工事業者の比較先を案内する情報サイトです。",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0b1633",
+  "theme_color": "#071a35",
   "icons": [
     {
-      "src": "icon.svg?v=20260710-1",
+      "src": "icon.svg?v=20260711-2",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
