@@ -1,7 +1,7 @@
 {
-  "name": "BRIDGEコスト削減ナビ｜電気・LED・POS・勤怠・事業資金の比較案内",
+  "name": "BRIDGEコスト削減ナビ｜電気・LED・POS・勤怠・電子契約・事業資金",
   "short_name": "BRIDGEコストナビ",
-  "description": "法人・個人事業主向けに、電気料金、LED工事、POSレジ、勤怠管理、売掛金前払いサービスの確認先を案内する情報サイトです。",
+  "description": "法人・個人事業主向けに、電気料金、LED工事、POSレジ、勤怠管理、電子契約、売掛金前払いサービスの確認先を案内する情報サイトです。",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -9,7 +9,7 @@
   "theme_color": "#071a35",
   "icons": [
     {
-      "src": "icon.svg?v=20260712-3",
+      "src": "icon.svg?v=20260712-4",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
