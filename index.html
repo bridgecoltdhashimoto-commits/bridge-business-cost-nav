@@ -3,42 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BRIDGEコスト削減ナビ｜電気・LED・POS・勤怠・事業資金の比較案内</title>
-  <meta name="description" content="法人・個人事業主向けに、電気料金、LED工事、POSレジ、クラウド勤怠管理、売掛金前払いサービスの確認先を目的別に案内する自己完結型サイトです。">
-  <meta property="og:title" content="BRIDGEコスト削減ナビ｜固定費・店舗運営・勤怠・資金繰り">
-  <meta property="og:description" content="今の事業課題に近い入口から、外部サービスの対象・条件・次の流れを確認できます。">
+  <title>BRIDGEコスト削減ナビ｜電気・LED・POS・勤怠・電子契約・事業資金</title>
+  <meta name="description" content="法人・個人事業主向けに、電気料金、LED工事、POSレジ、勤怠管理、電子契約、売掛金前払いサービスの確認先を、悩み別に案内する自己完結型サイトです。">
+  <meta property="og:title" content="BRIDGEコスト削減ナビ｜固定費・店舗運営・契約業務・資金繰り">
+  <meta property="og:description" content="今の事業課題に近い入口から、外部サービスの対象・確認ポイント・次の流れを確認できます。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bridgecoltdhashimoto-commits.github.io/bridge-business-cost-nav/">
   <meta name="twitter:card" content="summary">
   <meta name="theme-color" content="#071a35">
   <link rel="canonical" href="https://bridgecoltdhashimoto-commits.github.io/bridge-business-cost-nav/">
-  <link rel="icon" href="icon.svg?v=20260712-3" type="image/svg+xml">
-  <link rel="manifest" href="site.webmanifest?v=20260712-3">
+  <link rel="icon" href="icon.svg?v=20260712-4" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest?v=20260712-4">
   <style>
     :root{
-      --navy:#06172e;
-      --navy2:#0a2a52;
-      --blue:#1266e8;
-      --cyan:#08a8c7;
-      --green:#138a55;
-      --lime:#62a817;
-      --orange:#ed7b15;
-      --violet:#6657d9;
-      --ink:#142238;
-      --muted:#5f6b7c;
-      --line:#dbe5f0;
-      --surface:#ffffff;
-      --soft:0 14px 34px rgba(6,23,46,.09);
-      --shadow:0 24px 62px rgba(6,23,46,.14);
+      --navy:#06172e;--navy2:#0b2d56;--blue:#1266e8;--cyan:#08a8c7;--green:#138a55;
+      --lime:#62a817;--orange:#ed7b15;--violet:#6657d9;--gold:#c58b13;--ink:#142238;
+      --muted:#5f6b7c;--line:#dbe5f0;--soft:#f5f8fc;--white:#fff;
+      --shadow:0 22px 54px rgba(6,23,46,.12);--soft-shadow:0 12px 30px rgba(6,23,46,.08);
       --max:1180px;
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;scroll-padding-top:82px}
+    html{scroll-behavior:smooth;scroll-padding-top:78px}
     body{
       font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",system-ui,sans-serif;
-      color:var(--ink);
-      background:linear-gradient(180deg,#fff 0%,#f5f8fc 48%,#edf3fa 100%);
-      line-height:1.72;
+      color:var(--ink);background:linear-gradient(180deg,#fff 0%,#f5f8fc 46%,#edf3fa 100%);
+      line-height:1.72
     }
     a{color:inherit}
     img{display:block;max-width:100%;height:auto}
@@ -46,19 +35,15 @@
     .skip{position:absolute;left:-9999px}
     .skip:focus{left:8px;top:8px;z-index:9999;background:#fff;padding:10px 14px;border-radius:10px}
     header{
-      position:sticky;top:0;z-index:1000;
-      background:rgba(255,255,255,.95);
-      backdrop-filter:blur(14px);
-      border-bottom:1px solid rgba(6,23,46,.09);
+      position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.95);
+      backdrop-filter:blur(14px);border-bottom:1px solid rgba(6,23,46,.09)
     }
-    .header-inner{
-      min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px
-    }
+    .header-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
     .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--navy)}
     .brand-mark{
-      width:44px;height:44px;border-radius:15px;display:grid;place-items:center;color:#fff;
+      width:44px;height:44px;border-radius:15px;display:grid;place-items:center;color:#fff;font-weight:1000;
       background:linear-gradient(135deg,var(--navy),var(--blue),var(--cyan));
-      font-weight:1000;box-shadow:0 10px 24px rgba(18,102,232,.24)
+      box-shadow:0 10px 24px rgba(18,102,232,.24)
     }
     .brand strong{display:block;line-height:1.2}
     .brand small{display:block;color:var(--muted);font-size:.68rem;font-weight:900;letter-spacing:.09em;margin-top:3px}
@@ -69,32 +54,26 @@
     }
     .nav a:last-child{color:#fff;border:none;background:linear-gradient(135deg,var(--blue),var(--cyan))}
     .hero{
-      position:relative;overflow:hidden;padding:62px 0 40px;color:#fff;
+      position:relative;overflow:hidden;padding:58px 0 38px;color:#fff;
       background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 56%,#10547c 100%)
     }
     .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none}
-    .hero:before{
-      width:460px;height:460px;right:-150px;top:-230px;
-      background:radial-gradient(circle,rgba(8,168,199,.35),transparent 68%)
-    }
-    .hero:after{
-      width:390px;height:390px;left:-190px;bottom:-270px;
-      background:radial-gradient(circle,rgba(102,87,217,.27),transparent 68%)
-    }
+    .hero:before{width:460px;height:460px;right:-150px;top:-230px;background:radial-gradient(circle,rgba(8,168,199,.35),transparent 68%)}
+    .hero:after{width:390px;height:390px;left:-190px;bottom:-270px;background:radial-gradient(circle,rgba(102,87,217,.27),transparent 68%)}
     .hero-grid{
-      position:relative;z-index:1;display:grid;
-      grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:34px;align-items:center
+      position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);
+      gap:34px;align-items:center
     }
     .pr{
       display:inline-flex;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.1);
       border:1px solid rgba(255,255,255,.2);font-size:.78rem;font-weight:1000;margin-bottom:16px
     }
-    .hero h1{font-size:clamp(2.3rem,5.7vw,4.7rem);line-height:1.07;letter-spacing:-.04em;margin-bottom:18px}
+    .hero h1{font-size:clamp(2.25rem,5.5vw,4.55rem);line-height:1.07;letter-spacing:-.04em;margin-bottom:18px}
     .hero h1 span{
       background:linear-gradient(90deg,#83ddff,#9df3d5,#ffd77c);
       -webkit-background-clip:text;background-clip:text;color:transparent
     }
-    .lead{color:#dbe9f7;font-size:1.08rem;font-weight:700;margin-bottom:22px;max-width:760px}
+    .lead{color:#dbe9f7;font-size:1.07rem;font-weight:700;margin-bottom:22px;max-width:760px}
     .hero-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:760px}
     .hero-actions a{
       min-height:62px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;
@@ -104,20 +83,16 @@
     }
     .hero-actions a:hover,.hero-actions a:focus-visible{transform:translateY(-2px);background:rgba(255,255,255,.17)}
     .hero-actions a:nth-child(1){background:linear-gradient(135deg,var(--blue),var(--cyan));border:none}
+    .hero-actions a:nth-child(2){background:linear-gradient(135deg,var(--green),var(--cyan));border:none}
     .hero-actions a:nth-child(3){background:linear-gradient(135deg,#f0932b,var(--orange));border:none}
     .hero-actions a:nth-child(4){background:linear-gradient(135deg,var(--lime),var(--green));border:none}
-    .hero-actions a:nth-child(5){background:linear-gradient(135deg,var(--violet),#8876f3);border:none}
+    .hero-actions a:nth-child(5){background:linear-gradient(135deg,var(--gold),#e5b83f);border:none}
+    .hero-actions a:nth-child(6){background:linear-gradient(135deg,var(--violet),#8876f3);border:none}
     .hero-note{margin-top:15px;color:#bdd0e3;font-size:.84rem;font-weight:700}
-    .hero-panel{
-      background:rgba(255,255,255,.97);color:var(--ink);border-radius:30px;padding:24px;
-      box-shadow:0 30px 68px rgba(0,0,0,.25)
-    }
+    .hero-panel{background:rgba(255,255,255,.97);color:var(--ink);border-radius:30px;padding:24px;box-shadow:0 30px 68px rgba(0,0,0,.25)}
     .hero-panel h2{font-size:1.3rem;color:var(--navy);margin-bottom:14px}
     .check{list-style:none;display:grid;gap:10px}
-    .check li{
-      position:relative;padding:12px 12px 12px 44px;border-radius:16px;background:#f6f9fd;
-      border:1px solid var(--line);font-weight:800
-    }
+    .check li{position:relative;padding:12px 12px 12px 44px;border-radius:16px;background:#f6f9fd;border:1px solid var(--line);font-weight:800}
     .check li:before{
       content:"✓";position:absolute;left:14px;top:12px;width:22px;height:22px;display:grid;place-items:center;
       border-radius:50%;color:#fff;background:linear-gradient(135deg,var(--green),var(--cyan));font-size:.78rem
@@ -130,7 +105,7 @@
     .section-head{margin-bottom:24px}
     .eyebrow{display:inline-block;color:var(--blue);font-size:.77rem;font-weight:1000;letter-spacing:.13em;margin-bottom:7px}
     .section-head h2{font-size:clamp(1.75rem,3.8vw,2.75rem);line-height:1.24;color:var(--navy);margin-bottom:9px}
-    .section-head p{max-width:870px;color:var(--muted);font-weight:700}
+    .section-head p{max-width:900px;color:var(--muted);font-weight:700}
     .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
     .card{
       position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;
@@ -140,6 +115,7 @@
     .card.led:before{background:linear-gradient(90deg,var(--green),var(--cyan))}
     .card.pos:before{background:linear-gradient(90deg,#f0932b,var(--orange))}
     .card.time:before{background:linear-gradient(90deg,var(--lime),var(--green))}
+    .card.sign:before{background:linear-gradient(90deg,var(--gold),#f0c85d)}
     .card.cash:before{background:linear-gradient(90deg,var(--violet),#9e8ff7)}
     .tag{
       align-self:flex-start;display:inline-flex;padding:6px 10px;border-radius:999px;background:#eaf2ff;
@@ -148,6 +124,7 @@
     .led .tag{background:#e8f8f2;color:#0a6d52}
     .pos .tag{background:#fff0df;color:#9d4f05}
     .time .tag{background:#eef8df;color:#477b0f}
+    .sign .tag{background:#fff6d9;color:#765500}
     .cash .tag{background:#f0edff;color:#5644bd}
     .card h3{font-size:1.45rem;line-height:1.34;color:var(--navy);margin-bottom:8px}
     .card>p{color:var(--muted);font-weight:700;margin-bottom:14px}
@@ -159,21 +136,26 @@
     }
     .pos .fit li:before{background:var(--orange);box-shadow:0 0 0 4px rgba(237,123,21,.12)}
     .time .fit li:before{background:var(--lime);box-shadow:0 0 0 4px rgba(98,168,23,.12)}
+    .sign .fit li:before{background:var(--gold);box-shadow:0 0 0 4px rgba(197,139,19,.13)}
     .cash .fit li:before{background:var(--violet);box-shadow:0 0 0 4px rgba(102,87,217,.12)}
-    .adbox{
-      margin-top:auto;background:#f7faff;border:1px solid var(--line);border-radius:21px;padding:16px;text-align:center
+    .before-you-go{
+      margin-bottom:14px;padding:12px 13px;border-radius:15px;background:#f8fafc;border:1px dashed #b9c9dc;
+      color:#42516a;font-size:.84rem;font-weight:800
     }
+    .adbox{margin-top:auto;background:#f7faff;border:1px solid var(--line);border-radius:21px;padding:16px;text-align:center}
     .adlabel{
       display:inline-flex;margin-bottom:9px;padding:4px 9px;border-radius:999px;color:#fff;background:var(--navy);
       font-size:.7rem;font-weight:1000;letter-spacing:.08em
     }
     .instruction{display:block;margin-bottom:12px;color:#34435a;font-size:.88rem;font-weight:900}
-    .banner{
+    .banner,.a8-banner a{
       display:inline-flex!important;justify-content:center;max-width:100%;border-radius:15px;overflow:hidden;
       box-shadow:0 12px 27px rgba(6,23,46,.16);transition:.2s
     }
-    .banner:hover,.banner:focus-visible{transform:translateY(-2px);outline:4px solid rgba(18,102,232,.18);outline-offset:4px}
-    .banner img{width:min(300px,100%);height:auto}
+    .banner:hover,.banner:focus-visible,.a8-banner a:hover,.a8-banner a:focus-visible{
+      transform:translateY(-2px);outline:4px solid rgba(18,102,232,.18);outline-offset:4px
+    }
+    .banner img,.a8-banner img{width:min(300px,100%);height:auto}
     .led-link{
       display:flex!important;align-items:center;justify-content:center;min-height:74px;width:100%;padding:15px 16px;
       border-radius:18px;color:#fff!important;text-decoration:none;background:linear-gradient(135deg,var(--green),var(--cyan));
@@ -184,14 +166,15 @@
       margin-top:10px;padding:10px 12px;border-radius:14px;background:#fff8e9;border:1px solid #f2d397;
       color:#6a4a00;font-size:.78rem;font-weight:800;text-align:left
     }
-    .pixel{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
-    .compare{overflow-x:auto;border-radius:23px;box-shadow:var(--soft)}
-    table{width:100%;min-width:1000px;border-collapse:collapse;background:#fff}
-    th,td{padding:15px;border:1px solid var(--line);text-align:left;vertical-align:top}
-    th{background:#edf4ff;color:var(--navy)}
-    td:first-child{font-weight:1000;color:var(--navy)}
+    .pixel,.a8-banner>img{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+    .decision-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .decision{
+      background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--soft-shadow)
+    }
+    .decision b{display:block;color:var(--navy);font-size:1.02rem;margin-bottom:6px}
+    .decision p{color:var(--muted);font-size:.88rem;font-weight:700}
     .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .step,.notice{background:#fff;border:1px solid var(--line);border-radius:22px;padding:21px;box-shadow:var(--soft)}
+    .step,.notice{background:#fff;border:1px solid var(--line);border-radius:22px;padding:21px;box-shadow:var(--soft-shadow)}
     .step b{
       width:39px;height:39px;display:grid;place-items:center;border-radius:13px;
       background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;margin-bottom:10px
@@ -199,52 +182,55 @@
     .step h3{color:var(--navy);font-size:1.08rem;margin-bottom:6px}
     .step p,.notice li{color:var(--muted);font-size:.92rem;font-weight:700}
     .faq{display:grid;gap:10px}
-    .faq details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px 17px;box-shadow:var(--soft)}
+    .faq details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px 17px;box-shadow:var(--soft-shadow)}
     .faq summary{cursor:pointer;color:var(--navy);font-weight:1000}
     .faq p{padding-top:10px;color:var(--muted);font-weight:700}
     .notice h2{color:var(--navy);font-size:1.35rem;margin-bottom:10px}
     .notice ul{padding-left:1.25em;display:grid;gap:8px}
-    footer{margin-top:30px;background:var(--navy);color:#eef5ff;padding:30px 0 112px}
+    footer{margin-top:30px;background:var(--navy);color:#eef5ff;padding:30px 0 124px}
     .footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     footer small{color:#b9c9de}
     .mobile{
       position:fixed;left:10px;right:10px;bottom:10px;z-index:1100;display:none;
-      grid-template-columns:repeat(5,1fr);gap:5px;padding:8px;border-radius:20px;background:rgba(255,255,255,.96);
+      grid-template-columns:repeat(6,1fr);gap:5px;padding:8px;border-radius:20px;background:rgba(255,255,255,.96);
       border:1px solid var(--line);box-shadow:0 18px 44px rgba(6,23,46,.23);backdrop-filter:blur(12px)
     }
     .mobile a{
-      min-height:48px;display:grid;place-items:center;padding:5px 3px;border-radius:13px;text-decoration:none;
-      text-align:center;color:#fff;font-size:.68rem;font-weight:1000;line-height:1.15
+      min-height:48px;display:grid;place-items:center;padding:5px 2px;border-radius:13px;text-decoration:none;
+      text-align:center;color:#fff;font-size:.64rem;font-weight:1000;line-height:1.12
     }
     .mobile a:nth-child(1){background:linear-gradient(135deg,var(--blue),var(--cyan))}
     .mobile a:nth-child(2){background:linear-gradient(135deg,var(--green),var(--cyan))}
     .mobile a:nth-child(3){background:linear-gradient(135deg,#f0932b,var(--orange))}
     .mobile a:nth-child(4){background:linear-gradient(135deg,var(--lime),var(--green))}
-    .mobile a:nth-child(5){background:linear-gradient(135deg,var(--violet),#8876f3)}
+    .mobile a:nth-child(5){background:linear-gradient(135deg,var(--gold),#e5b83f)}
+    .mobile a:nth-child(6){background:linear-gradient(135deg,var(--violet),#8876f3)}
     @media(max-width:920px){
       .hero-grid{grid-template-columns:1fr}
       .hero-panel{order:-1}
       .nav{display:none}
       .grid{grid-template-columns:1fr 1fr}
       .hero-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .decision-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     }
     @media(max-width:700px){
-      body{padding-bottom:90px}
+      body{padding-bottom:112px}
       .header-inner{min-height:62px}
       .brand strong{font-size:.92rem}
       .brand small{font-size:.61rem}
       .hero{padding:30px 0 22px}
       .hero-grid{gap:18px}
       .hero-panel{padding:17px;border-radius:22px}
-      .hero-actions,.grid,.steps{grid-template-columns:1fr}
+      .hero-actions,.grid,.steps,.decision-grid{grid-template-columns:1fr}
       .card{padding:18px;border-radius:22px}
-      .mobile{display:grid}
-      .hero h1{font-size:2.3rem}
+      .mobile{display:grid;grid-template-columns:repeat(3,1fr)}
+      .mobile a{min-height:42px;font-size:.68rem}
+      .hero h1{font-size:2.28rem}
       .section-head h2{font-size:1.75rem}
     }
     @media(max-width:390px){
-      .mobile a{font-size:.62rem}
       .mobile{left:6px;right:6px;gap:4px;padding:6px}
+      .mobile a{font-size:.64rem}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   </style>
@@ -270,14 +256,15 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="pr">PR｜広告リンクを含みます</span>
+        <span class="pr">PR｜アフィリエイト広告を含みます</span>
         <h1>事業コストと運営負担、<br><span>今の悩みから見直す。</span></h1>
-        <p class="lead">電気料金、LED工事、POSレジ、勤怠管理、資金繰り。必要な項目だけを選び、対象者・確認ポイント・次の流れを把握してから外部サービスへ進めます。</p>
+        <p class="lead">電気料金、LED工事、POSレジ、勤怠管理、電子契約、資金繰り。必要な項目だけを選び、対象者・確認ポイント・次の流れを把握してから外部サービスへ進めます。</p>
         <div class="hero-actions">
           <a href="#electric">電気料金</a>
           <a href="#led">LED工事</a>
           <a href="#pos">POSレジ</a>
           <a href="#time">勤怠管理</a>
+          <a href="#sign">電子契約</a>
           <a href="#cash">事業資金</a>
         </div>
         <p class="hero-note">株式会社BRIDGEへの電話・相談は不要です。申込、資料請求、見積、契約はリンク先の提供会社で行われます。</p>
@@ -313,6 +300,7 @@
             <li>法人向けプランを比較したい</li>
             <li>切替条件をまとめて確認したい</li>
           </ul>
+          <p class="before-you-go">確認ポイント：供給エリア、現在の契約、解約条件、切替時期。</p>
           <div class="adbox">
             <span class="adlabel">広告</span>
             <span class="instruction">公式バナーから料金比較の条件を確認</span>
@@ -333,12 +321,13 @@
             <li>業者選びに時間をかけたくない</li>
             <li>具体的な工事予定がある</li>
           </ul>
+          <p class="before-you-go">確認ポイント：工事予定場所、希望時期、現地調査、見積条件。</p>
           <div class="adbox">
             <span class="adlabel">広告</span>
             <span class="instruction">工事予定が具体的な方はこちら</span>
             <a class="led-link" href="https://px.a8.net/svt/ejp?a8mat=4B7XX5+8GTYIA+2LHA+1TK94Y" rel="nofollow sponsored">LED照明工事業者の紹介条件を確認する</a>
             <img class="pixel" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4B7XX5+8GTYIA+2LHA+1TK94Y" alt="">
-            <p class="note">問い合わせ後、業者または運営会社から連絡があります。情報収集だけの申込は避けてください。</p>
+            <p class="note">問い合わせ後、業者または運営会社から連絡があります。具体的に検討している場合のみ進んでください。</p>
           </div>
         </article>
 
@@ -348,18 +337,21 @@
           <p>店舗の会計、売上分析、在庫・キャッシュレス対応をまとめて見直したい事業者向けです。</p>
           <ul class="fit">
             <li>古いレジや手作業の集計を見直したい</li>
-            <li>売上状況をリアルタイムで確認したい</li>
+            <li>売上状況を確認しやすくしたい</li>
             <li>飲食・小売・医療など店舗でレジを使う</li>
           </ul>
+          <p class="before-you-go">確認ポイント：業種、店舗数、現在のレジ、必要な決済・在庫機能。</p>
           <div class="adbox">
             <span class="adlabel">広告</span>
             <span class="instruction">公式バナーからサービス資料を確認</span>
-            <a href="https://px.a8.net/svt/ejp?a8mat=4B7YP5+CCQTO2+4Z10+5ZU29" rel="nofollow">
-              <img border="0" width="300" height="250" alt="クラウドPOSレジの公式広告" src="https://www27.a8.net/svt/bgt?aid=260712041747&wid=001&eno=01&mid=s00000023202001007000&mc=1">
-            </a>
-            <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7YP5+CCQTO2+4Z10+5ZU29" alt="">
-            <p class="note">資料請求後、30日以内のヒアリングで氏名、会社名、店舗・サービス情報、連絡先の確認があります。</p>
-            <p class="important">レジを使用しない企業・業種、サービス利用意思がない申込は対象外です。店舗運営で実際に検討している場合のみ進んでください。</p>
+            <div class="a8-banner">
+              <a href="https://px.a8.net/svt/ejp?a8mat=4B7YP5+CCQTO2+4Z10+5ZU29" rel="nofollow">
+                <img border="0" width="300" height="250" alt="クラウドPOSレジの公式広告" src="https://www27.a8.net/svt/bgt?aid=260712041747&wid=001&eno=01&mid=s00000023202001007000&mc=1">
+              </a>
+              <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7YP5+CCQTO2+4Z10+5ZU29" alt="">
+            </div>
+            <p class="note">資料請求後、会社名、店舗・サービス情報、連絡先などの確認が行われる場合があります。</p>
+            <p class="important">レジを使用しない企業・業種、利用意思がない申込みは対象外です。実際に導入を検討している場合のみ進んでください。</p>
           </div>
         </article>
 
@@ -372,6 +364,7 @@
             <li>店舗・スタッフの勤怠をまとめたい</li>
             <li>導入前に資料で機能を確認したい</li>
           </ul>
+          <p class="before-you-go">確認ポイント：従業員数、拠点数、打刻方法、給与計算との連携。</p>
           <div class="adbox">
             <span class="adlabel">広告</span>
             <span class="instruction">公式バナーからサービス資料を確認</span>
@@ -379,7 +372,31 @@
               <img width="300" height="250" alt="クラウド勤怠管理サービスの公式広告" src="https://www21.a8.net/svt/bgt?aid=260712038420&wid=001&eno=01&mid=s00000023202005009000&mc=1">
             </a>
             <img class="pixel" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7YP2+6Y22UQ+4Z10+TTLOX" alt="">
-            <p class="note">資料請求後、30日以内のヒアリングで氏名、会社名、店舗・サービス情報、連絡先の確認があります。</p>
+            <p class="note">資料請求後、会社名、店舗・サービス情報、連絡先などの確認が行われる場合があります。</p>
+          </div>
+        </article>
+
+        <article id="sign" class="card sign">
+          <span class="tag">PR｜電子契約・契約書管理</span>
+          <h3>紙の契約書業務を減らしたい</h3>
+          <p>契約書の作成、保管、検索、更新管理をクラウドで効率化したい事業者向けです。</p>
+          <ul class="fit">
+            <li>契約書を探す時間を減らしたい</li>
+            <li>契約書作成・署名の流れを整理したい</li>
+            <li>契約更新の確認漏れを防ぎたい</li>
+          </ul>
+          <p class="before-you-go">確認ポイント：利用人数、契約書数、必要機能、料金、導入・支払い条件。</p>
+          <div class="adbox">
+            <span class="adlabel">広告</span>
+            <span class="instruction">公式バナーから電子契約サービスの導入条件を確認</span>
+            <div class="a8-banner">
+              <a href="https://px.a8.net/svt/ejp?a8mat=4B7YP6+89OR8Y+3SPO+BEUDPD" rel="nofollow">
+                <img border="0" width="300" height="250" alt="電子契約・契約書管理サービスの公式広告" src="https://www20.a8.net/svt/bgt?aid=260712042500&wid=001&eno=01&mid=s00000017718069006000&mc=1">
+              </a>
+              <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4B7YP6+89OR8Y+3SPO+BEUDPD" alt="">
+            </div>
+            <p class="note">広告主を初めて利用する事業者向けです。申込み後の導入料金、契約内容、支払い条件はリンク先で確認してください。</p>
+            <p class="important">補助金の採択・利用を保証するものではありません。対象年度、対象者、申請要件、自己負担額は公式サイトで必ず確認してください。</p>
           </div>
         </article>
 
@@ -392,6 +409,7 @@
             <li>Web完結の方法を確認したい</li>
             <li>手数料や契約条件を比較したい</li>
           </ul>
+          <p class="before-you-go">確認ポイント：対象となる売掛金、手数料、必要書類、入金時期。</p>
           <div class="adbox">
             <span class="adlabel">広告</span>
             <span class="instruction">公式バナーから無料見積の条件を確認</span>
@@ -410,48 +428,16 @@
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">QUICK COMPARISON</span>
-        <h2>5つの違いを確認</h2>
-        <p>同じ「コスト削減・業務改善」でも、目的と次の流れは異なります。今の課題に合うものだけを選んでください。</p>
+        <h2>6つの違いを短く確認</h2>
+        <p>同じ「コスト削減・業務改善」でも目的は異なります。いま優先したい課題に合うものだけを選んでください。</p>
       </div>
-      <div class="compare">
-        <table>
-          <thead>
-            <tr>
-              <th>比較項目</th>
-              <th>電気料金</th>
-              <th>LED工事</th>
-              <th>POSレジ</th>
-              <th>勤怠管理</th>
-              <th>事業資金</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>主な目的</td>
-              <td>固定費の見直し</td>
-              <td>設備更新</td>
-              <td>店舗運営の効率化</td>
-              <td>人員管理の効率化</td>
-              <td>資金繰り確認</td>
-            </tr>
-            <tr>
-              <td>向いている人</td>
-              <td>電気代が高い事業者</td>
-              <td>具体的に工事予定がある事業者</td>
-              <td>店舗でレジを使用する事業者</td>
-              <td>勤怠・シフト管理を改善したい事業者</td>
-              <td>売掛金を保有する事業者</td>
-            </tr>
-            <tr>
-              <td>次の流れ</td>
-              <td>利用状況を入力</td>
-              <td>要望入力後に業者紹介</td>
-              <td>資料請求後にヒアリング</td>
-              <td>資料請求後にヒアリング</td>
-              <td>無料見積後に本人・売掛金確認</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="decision-grid">
+        <div class="decision"><b>電気料金</b><p>毎月の固定費を見直す。現在の契約内容と切替条件の確認が中心です。</p></div>
+        <div class="decision"><b>LED工事</b><p>設備更新を検討する。工事場所・希望時期・見積条件の整理が必要です。</p></div>
+        <div class="decision"><b>POSレジ</b><p>店舗会計と売上管理を効率化する。レジを実際に使う事業者向けです。</p></div>
+        <div class="decision"><b>勤怠管理</b><p>打刻・シフト・労務管理をまとめる。従業員数や運用方法の確認が必要です。</p></div>
+        <div class="decision"><b>電子契約</b><p>契約書作成・署名・保管・更新管理を効率化する。導入条件を確認します。</p></div>
+        <div class="decision"><b>事業資金</b><p>保有する売掛金の活用方法を確認する。手数料と必要書類の確認が重要です。</p></div>
       </div>
     </div>
   </section>
@@ -463,8 +449,8 @@
         <h2>利用の流れ</h2>
       </div>
       <div class="steps">
-        <div class="step"><b>1</b><h3>目的を選ぶ</h3><p>今の事業課題に近い項目を1つ選びます。</p></div>
-        <div class="step"><b>2</b><h3>条件を確認する</h3><p>対象、料金、対応地域、連絡の有無、必要情報を確認します。</p></div>
+        <div class="step"><b>1</b><h3>目的を1つ選ぶ</h3><p>今の事業課題に最も近い項目を選びます。</p></div>
+        <div class="step"><b>2</b><h3>条件を確認する</h3><p>対象、料金、連絡の有無、必要情報、契約条件を確認します。</p></div>
         <div class="step"><b>3</b><h3>納得できた場合だけ進む</h3><p>内容を理解したうえで、資料請求、見積、申込を行います。</p></div>
       </div>
     </div>
@@ -479,19 +465,19 @@
       <div class="faq">
         <details>
           <summary>株式会社BRIDGEへ相談する必要はありますか？</summary>
-          <p>ありません。株式会社BRIDGEは比較・紹介サイトの運営者であり、見積、審査、契約、資金提供、工事、POSレジ提供、勤怠サービス提供は行いません。</p>
+          <p>ありません。株式会社BRIDGEは比較・紹介サイトの運営者であり、見積、審査、契約、資金提供、工事、POSレジ提供、勤怠管理、電子契約サービス提供は行いません。</p>
         </details>
         <details>
-          <summary>POSレジの資料請求後に連絡はありますか？</summary>
-          <p>あります。成果条件上、資料請求または問い合わせ後30日以内のヒアリングで、氏名、会社名、店舗・サービス情報、連絡先の確認が行われます。</p>
+          <summary>電子契約サービスの補助金は必ず利用できますか？</summary>
+          <p>利用を保証するものではありません。対象年度、対象者、申請期間、必要書類、採択条件、自己負担額はリンク先で確認してください。</p>
         </details>
         <details>
-          <summary>レジを使わない事業でもPOSレジ資料を請求できますか？</summary>
-          <p>この広告は、実際にレジを利用する店舗・事業者向けです。レジを使用しない企業・業種は対象外です。</p>
+          <summary>資料請求や申込みの後に連絡はありますか？</summary>
+          <p>サービスによっては、会社情報、利用目的、店舗・従業員・契約書などの状況を確認するため、提供会社から連絡やヒアリングがあります。</p>
         </details>
         <details>
           <summary>必ずコストが下がりますか？</summary>
-          <p>保証はありません。契約内容、利用状況、地域、選択するプランによって結果は異なります。</p>
+          <p>保証はありません。契約内容、利用状況、地域、導入費、選択するプランによって結果は異なります。</p>
         </details>
         <details>
           <summary>個人情報は株式会社BRIDGEに送られますか？</summary>
@@ -509,7 +495,7 @@
           <li>本ページにはアフィリエイト広告（PR）が含まれます。</li>
           <li>株式会社BRIDGEは、各サービスの提供会社、代理店、審査会社、工事会社ではありません。</li>
           <li>申込、見積、資料請求、料金、契約、審査、工事、資金提供はリンク先の提供会社が行います。</li>
-          <li>費用削減、契約成立、審査通過、資金調達、その他の成果を保証するものではありません。</li>
+          <li>費用削減、契約成立、審査通過、補助金採択、資金調達、その他の成果を保証するものではありません。</li>
           <li>広告リンクの利用により株式会社BRIDGEが成果報酬を受け取る場合があります。</li>
         </ul>
       </div>
@@ -529,6 +515,7 @@
   <a href="#led">LED</a>
   <a href="#pos">POS</a>
   <a href="#time">勤怠</a>
+  <a href="#sign">契約</a>
   <a href="#cash">資金</a>
 </nav>
 </body>
