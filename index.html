@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BRIDGEコスト削減ナビ｜法人・個人事業主の固定費・業務改善</title>
-  <meta name="description" content="法人・個人事業主向けに、電気料金、法人Wi-Fi、LED工事、POSレジ、勤怠管理、電子契約、売掛金前払いサービスの対象条件と確認先を案内する自己完結型サイトです。">
+  <meta name="description" content="法人・個人事業主向けに、電気料金、法人Wi-Fi、LED工事、POSレジ、勤怠管理、電子契約、売掛金前払いサービスを、今の悩みから選べる案内サイトです。">
   <meta property="og:title" content="BRIDGEコスト削減ナビ｜固定費・通信・店舗運営・契約業務・資金繰り">
-  <meta property="og:description" content="今いちばん改善したい課題を1つ選び、対象条件を確認してから外部サービスへ進めます。">
+  <meta property="og:description" content="今いちばん改善したい課題を選び、確認ポイントを整理してから外部サービスを比較できます。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bridgecoltdhashimoto-commits.github.io/bridge-business-cost-nav/">
   <meta name="twitter:card" content="summary">
@@ -15,223 +15,50 @@
   <link rel="icon" href="icon.svg?v=20260712-5" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest?v=20260712-5">
   <style>
-    :root{
-      --navy:#06172e;--navy2:#0b2d56;--blue:#1266e8;--cyan:#08a8c7;--teal:#16a9a5;
-      --green:#138a55;--lime:#62a817;--orange:#ed7b15;--violet:#6657d9;--gold:#c58b13;
-      --ink:#142238;--muted:#5f6b7c;--line:#dbe5f0;--soft:#f5f8fc;--white:#fff;
-      --shadow:0 20px 48px rgba(6,23,46,.11);--max:1160px
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;scroll-padding-top:78px}
-    body{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff 0%,#f4f8fc 100%);line-height:1.72}
-    a{color:inherit}img{display:block;max-width:100%;height:auto}.container{width:min(var(--max),92%);margin:auto}
-    .skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;z-index:9999;background:#fff;padding:10px 14px;border-radius:10px}
-    header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(6,23,46,.09)}
-    .header-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--navy)}
-    .brand-mark{width:44px;height:44px;border-radius:15px;display:grid;place-items:center;color:#fff;font-weight:1000;background:linear-gradient(135deg,var(--navy),var(--blue),var(--cyan));box-shadow:0 10px 24px rgba(18,102,232,.24)}
-    .brand strong{display:block;line-height:1.2}.brand small{display:block;color:var(--muted);font-size:.68rem;font-weight:900;letter-spacing:.09em;margin-top:3px}
-    .nav{display:flex;gap:7px}.nav a{min-height:40px;display:inline-flex;align-items:center;padding:8px 13px;border-radius:999px;text-decoration:none;font-weight:900;font-size:.82rem;border:1px solid rgba(18,102,232,.15);background:#fff}.nav a:last-child{color:#fff;border:none;background:linear-gradient(135deg,var(--blue),var(--cyan))}
-    .hero{position:relative;overflow:hidden;padding:58px 0 44px;color:#fff;background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 55%,#10547c 100%)}
-    .hero:before{content:"";position:absolute;width:500px;height:500px;right:-170px;top:-250px;border-radius:50%;background:radial-gradient(circle,rgba(8,168,199,.38),transparent 68%)}
-    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(310px,.82fr);gap:32px;align-items:center}
-    .pr{display:inline-flex;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.78rem;font-weight:1000;margin-bottom:16px}
-    .hero h1{font-size:clamp(2.3rem,5.3vw,4.45rem);line-height:1.08;letter-spacing:-.04em;margin-bottom:18px}.hero h1 span{background:linear-gradient(90deg,#83ddff,#9df3d5,#ffd77c);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .lead{color:#dbe9f7;font-size:1.08rem;font-weight:700;margin-bottom:22px;max-width:760px}
-    .hero-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:760px}.hero-actions a{min-height:60px;display:flex;align-items:center;justify-content:center;text-align:center;padding:11px;border-radius:18px;text-decoration:none;font-weight:1000;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);box-shadow:0 14px 34px rgba(0,0,0,.17)}.hero-actions a:nth-child(1){background:linear-gradient(135deg,var(--blue),var(--cyan));border:none}.hero-actions a:nth-child(2){background:linear-gradient(135deg,var(--green),var(--cyan));border:none}.hero-actions a:nth-child(3){background:linear-gradient(135deg,var(--orange),#f3a23d);border:none}
-    .hero-note{margin-top:15px;color:#bdd0e3;font-size:.84rem;font-weight:700}
-    .hero-panel{background:rgba(255,255,255,.98);color:var(--ink);border-radius:28px;padding:23px;box-shadow:0 30px 68px rgba(0,0,0,.25)}.hero-panel h2{font-size:1.28rem;color:var(--navy);margin-bottom:13px}.check{list-style:none;display:grid;gap:10px}.check li{position:relative;padding:12px 12px 12px 44px;border-radius:16px;background:#f6f9fd;border:1px solid var(--line);font-weight:800}.check li:before{content:"✓";position:absolute;left:14px;top:12px;width:22px;height:22px;display:grid;place-items:center;border-radius:50%;color:#fff;background:linear-gradient(135deg,var(--green),var(--cyan));font-size:.78rem}.caption{margin-top:12px;padding:12px 14px;border-radius:15px;background:#fff7df;border:1px solid #f2d88c;color:#654b0b;font-size:.85rem;font-weight:800}
-    section{padding:46px 0}.section-head{margin-bottom:24px}.eyebrow{display:inline-block;color:var(--blue);font-size:.77rem;font-weight:1000;letter-spacing:.13em;margin-bottom:7px}.section-head h2{font-size:clamp(1.75rem,3.8vw,2.75rem);line-height:1.24;color:var(--navy);margin-bottom:9px}.section-head p{max-width:900px;color:var(--muted);font-weight:700}
-    .gate{background:#eef6ff;border-top:1px solid #d8e6f5;border-bottom:1px solid #d8e6f5}.gate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.gate-card{padding:20px;border:1px solid var(--line);border-radius:21px;background:#fff;box-shadow:0 12px 30px rgba(6,23,46,.07)}.gate-card b{display:block;color:var(--navy);font-size:1.04rem;margin-bottom:6px}.gate-card p{color:var(--muted);font-size:.9rem;font-weight:700}.gate-warning{margin-top:15px;padding:13px 15px;border:1px solid #efd397;border-radius:15px;background:#fff8e9;color:#694b08;font-size:.86rem;font-weight:800}
-    .group{margin-bottom:35px}.group:last-child{margin-bottom:0}.group-title{display:flex;align-items:center;gap:10px;margin-bottom:16px}.group-title span{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;color:#fff;font-weight:1000;background:linear-gradient(135deg,var(--navy),var(--blue))}.group-title h3{color:var(--navy);font-size:1.4rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-    .card{position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:27px;padding:23px;box-shadow:var(--shadow)}.card:before{content:"";position:absolute;inset:0 0 auto;height:7px;background:linear-gradient(90deg,var(--blue),var(--cyan))}.card.wifi:before{background:linear-gradient(90deg,var(--teal),#66d7d0)}.card.led:before{background:linear-gradient(90deg,var(--green),var(--cyan))}.card.pos:before{background:linear-gradient(90deg,#f0932b,var(--orange))}.card.time:before{background:linear-gradient(90deg,var(--lime),var(--green))}.card.sign:before{background:linear-gradient(90deg,var(--gold),#f0c85d)}.card.cash:before{background:linear-gradient(90deg,var(--violet),#9e8ff7)}
-    .tag{align-self:flex-start;display:inline-flex;padding:6px 10px;border-radius:999px;background:#eaf2ff;color:#174f9e;font-size:.73rem;font-weight:1000;margin-bottom:13px}.wifi .tag{background:#e5fbf9;color:#087a77}.led .tag{background:#e8f8f2;color:#0a6d52}.pos .tag{background:#fff0df;color:#9d4f05}.time .tag{background:#eef8df;color:#477b0f}.sign .tag{background:#fff6d9;color:#765500}.cash .tag{background:#f0edff;color:#5644bd}
-    .card h3{font-size:1.43rem;line-height:1.32;color:var(--navy);margin-bottom:8px}.card>p{color:var(--muted);font-weight:700;margin-bottom:13px}.fit{list-style:none;display:grid;gap:8px;margin-bottom:15px}.fit li{position:relative;padding-left:22px;color:#34435a;font-size:.92rem;font-weight:750}.fit li:before{content:"";position:absolute;left:1px;top:.72em;width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(8,168,199,.12)}
-    .before{margin-bottom:13px;padding:11px 12px;border-radius:14px;background:#f8fafc;border:1px dashed #b9c9dc;color:#42516a;font-size:.83rem;font-weight:800}.guide-link{display:flex;align-items:center;justify-content:center;min-height:50px;margin-bottom:13px;padding:11px 14px;border-radius:15px;color:#fff;text-decoration:none;text-align:center;font-weight:1000;background:linear-gradient(135deg,var(--navy),var(--blue))}.guide-link.green{background:linear-gradient(135deg,var(--green),var(--cyan))}.guide-link.orange{background:linear-gradient(135deg,var(--orange),#f3a23d)}.guide-link.lime{background:linear-gradient(135deg,var(--lime),var(--green))}
-    .adbox{margin-top:auto;background:#f7faff;border:1px solid var(--line);border-radius:20px;padding:16px;text-align:center}.adlabel{display:inline-flex;margin-bottom:9px;padding:4px 9px;border-radius:999px;color:#fff;background:var(--navy);font-size:.7rem;font-weight:1000;letter-spacing:.08em}.instruction{display:block;margin-bottom:12px;color:#34435a;font-size:.87rem;font-weight:900}.banner,.a8-banner a{display:inline-flex!important;justify-content:center;max-width:100%;border-radius:15px;overflow:hidden;box-shadow:0 12px 27px rgba(6,23,46,.16)}.banner img,.a8-banner a img{width:min(300px,100%);height:auto}.led-link{display:flex!important;align-items:center;justify-content:center;min-height:70px;width:100%;padding:14px 16px;border-radius:17px;color:#fff!important;text-decoration:none;background:linear-gradient(135deg,var(--green),var(--cyan));font-weight:1000}.note{margin-top:12px;color:var(--muted);font-size:.79rem;font-weight:700;text-align:left}.important{margin-top:10px;padding:10px 12px;border-radius:14px;background:#fff8e9;border:1px solid #f2d397;color:#6a4a00;font-size:.78rem;font-weight:800;text-align:left}.pixel,.a8-banner>img{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
-    .faq{display:grid;gap:10px}.faq details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px 17px;box-shadow:0 10px 24px rgba(6,23,46,.07)}.faq summary{cursor:pointer;color:var(--navy);font-weight:1000}.faq p{padding-top:10px;color:var(--muted);font-weight:700}.notice{background:#fff;border:1px solid var(--line);border-radius:22px;padding:21px;box-shadow:0 12px 30px rgba(6,23,46,.08)}.notice h2{color:var(--navy);font-size:1.35rem;margin-bottom:10px}.notice ul{padding-left:1.25em;display:grid;gap:8px}.notice li{color:var(--muted);font-size:.92rem;font-weight:700}
-    footer{margin-top:30px;background:var(--navy);color:#eef5ff;padding:30px 0 105px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}footer small{color:#b9c9de}
-    .mobile{position:fixed;left:10px;right:10px;bottom:10px;z-index:1100;display:none;grid-template-columns:repeat(4,1fr);gap:5px;padding:8px;border-radius:20px;background:rgba(255,255,255,.96);border:1px solid var(--line);box-shadow:0 18px 44px rgba(6,23,46,.23);backdrop-filter:blur(12px)}.mobile a{min-height:43px;display:grid;place-items:center;padding:5px 2px;border-radius:13px;text-decoration:none;text-align:center;color:#fff;font-size:.67rem;font-weight:1000;line-height:1.12}.mobile a:nth-child(1){background:linear-gradient(135deg,var(--teal),var(--cyan))}.mobile a:nth-child(2){background:linear-gradient(135deg,var(--green),var(--cyan))}.mobile a:nth-child(3){background:linear-gradient(135deg,var(--orange),#f3a23d)}.mobile a:nth-child(4){background:linear-gradient(135deg,var(--lime),var(--green))}
-    @media(max-width:920px){.hero-grid{grid-template-columns:1fr}.hero-panel{order:-1}.nav{display:none}.grid{grid-template-columns:1fr 1fr}.hero-actions{grid-template-columns:1fr}.gate-grid{grid-template-columns:1fr}}
-    @media(max-width:700px){body{padding-bottom:92px}.hero{padding:30px 0 24px}.hero h1{font-size:2.28rem}.grid{grid-template-columns:1fr}.card{padding:18px;border-radius:22px}.mobile{display:grid}.section-head h2{font-size:1.75rem}}
-    @media(max-width:390px){.mobile{left:6px;right:6px;gap:4px;padding:6px}.mobile a{font-size:.62rem}}
+    :root{--navy:#06172e;--navy2:#0b2d56;--blue:#1266e8;--cyan:#08a8c7;--teal:#16a9a5;--green:#138a55;--lime:#62a817;--orange:#ed7b15;--violet:#6657d9;--gold:#c58b13;--ink:#142238;--muted:#5f6b7c;--line:#dbe5f0;--soft:#f5f8fc;--white:#fff;--shadow:0 20px 48px rgba(6,23,46,.11);--max:1160px}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:78px}body{font-family:"Yu Gothic","Hiragino Kaku Gothic ProN","Meiryo",system-ui,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fff 0%,#f4f8fc 100%);line-height:1.72}a{color:inherit}img{display:block;max-width:100%;height:auto}.container{width:min(var(--max),92%);margin:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;z-index:9999;background:#fff;padding:10px 14px;border-radius:10px}
+    header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(6,23,46,.09)}.header-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--navy)}.brand-mark{width:44px;height:44px;border-radius:15px;display:grid;place-items:center;color:#fff;font-weight:1000;background:linear-gradient(135deg,var(--navy),var(--blue),var(--cyan));box-shadow:0 10px 24px rgba(18,102,232,.24)}.brand strong{display:block;line-height:1.2}.brand small{display:block;color:var(--muted);font-size:.68rem;font-weight:900;letter-spacing:.09em;margin-top:3px}.nav{display:flex;gap:7px}.nav a{min-height:40px;display:inline-flex;align-items:center;padding:8px 13px;border-radius:999px;text-decoration:none;font-weight:900;font-size:.82rem;border:1px solid rgba(18,102,232,.15);background:#fff}.nav a:last-child{color:#fff;border:none;background:linear-gradient(135deg,var(--blue),var(--cyan))}
+    .hero{position:relative;overflow:hidden;padding:58px 0 44px;color:#fff;background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 55%,#10547c 100%)}.hero:before{content:"";position:absolute;width:500px;height:500px;right:-170px;top:-250px;border-radius:50%;background:radial-gradient(circle,rgba(8,168,199,.38),transparent 68%)}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(310px,.82fr);gap:32px;align-items:center}.service-note{display:inline-flex;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:.78rem;font-weight:900;margin-bottom:16px}.hero h1{font-size:clamp(2.3rem,5.3vw,4.45rem);line-height:1.08;letter-spacing:-.04em;margin-bottom:18px}.hero h1 span{background:linear-gradient(90deg,#83ddff,#9df3d5,#ffd77c);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{color:#dbe9f7;font-size:1.08rem;font-weight:700;margin-bottom:22px;max-width:760px}.hero-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:760px}.hero-actions a{min-height:60px;display:flex;align-items:center;justify-content:center;text-align:center;padding:11px;border-radius:18px;text-decoration:none;font-weight:1000;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);box-shadow:0 14px 34px rgba(0,0,0,.17)}.hero-actions a:nth-child(1){background:linear-gradient(135deg,var(--blue),var(--cyan));border:none}.hero-actions a:nth-child(2){background:linear-gradient(135deg,var(--green),var(--cyan));border:none}.hero-actions a:nth-child(3){background:linear-gradient(135deg,var(--orange),#f3a23d);border:none}.hero-note{margin-top:15px;color:#bdd0e3;font-size:.84rem;font-weight:700}.hero-panel{background:rgba(255,255,255,.98);color:var(--ink);border-radius:28px;padding:23px;box-shadow:0 30px 68px rgba(0,0,0,.25)}.hero-panel h2{font-size:1.28rem;color:var(--navy);margin-bottom:13px}.check{list-style:none;display:grid;gap:10px}.check li{position:relative;padding:12px 12px 12px 44px;border-radius:16px;background:#f6f9fd;border:1px solid var(--line);font-weight:800}.check li:before{content:"✓";position:absolute;left:14px;top:12px;width:22px;height:22px;display:grid;place-items:center;border-radius:50%;color:#fff;background:linear-gradient(135deg,var(--green),var(--cyan));font-size:.78rem}.caption{margin-top:12px;padding:12px 14px;border-radius:15px;background:#fff7df;border:1px solid #f2d88c;color:#654b0b;font-size:.85rem;font-weight:800}
+    section{padding:46px 0}.section-head{margin-bottom:24px}.eyebrow{display:inline-block;color:var(--blue);font-size:.77rem;font-weight:1000;letter-spacing:.13em;margin-bottom:7px}.section-head h2{font-size:clamp(1.75rem,3.8vw,2.75rem);line-height:1.24;color:var(--navy);margin-bottom:9px}.section-head p{max-width:900px;color:var(--muted);font-weight:700}.group{margin-bottom:38px}.group:last-child{margin-bottom:0}.group-title{display:flex;align-items:center;gap:10px;margin-bottom:16px}.group-title span{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;color:#fff;font-weight:1000;background:linear-gradient(135deg,var(--navy),var(--blue))}.group-title h3{color:var(--navy);font-size:1.4rem}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{position:relative;overflow:hidden;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:27px;padding:23px;box-shadow:var(--shadow)}.card:before{content:"";position:absolute;inset:0 0 auto;height:7px;background:linear-gradient(90deg,var(--blue),var(--cyan))}.card.wifi:before{background:linear-gradient(90deg,var(--teal),#66d7d0)}.card.led:before{background:linear-gradient(90deg,var(--green),var(--cyan))}.card.pos:before{background:linear-gradient(90deg,#f0932b,var(--orange))}.card.time:before{background:linear-gradient(90deg,var(--lime),var(--green))}.card.sign:before{background:linear-gradient(90deg,var(--gold),#f0c85d)}.card.cash:before{background:linear-gradient(90deg,var(--violet),#9e8ff7)}.tag{align-self:flex-start;display:inline-flex;padding:6px 10px;border-radius:999px;background:#eaf2ff;color:#174f9e;font-size:.73rem;font-weight:1000;margin-bottom:13px}.wifi .tag{background:#e5fbf9;color:#087a77}.led .tag{background:#e8f8f2;color:#0a6d52}.pos .tag{background:#fff0df;color:#9d4f05}.time .tag{background:#eef8df;color:#477b0f}.sign .tag{background:#fff6d9;color:#765500}.cash .tag{background:#f0edff;color:#5644bd}.card h3{font-size:1.43rem;line-height:1.32;color:var(--navy);margin-bottom:8px}.card>p{color:var(--muted);font-weight:700;margin-bottom:13px}.fit{list-style:none;display:grid;gap:8px;margin-bottom:15px}.fit li{position:relative;padding-left:22px;color:#34435a;font-size:.92rem;font-weight:750}.fit li:before{content:"";position:absolute;left:1px;top:.72em;width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px rgba(8,168,199,.12)}.before{margin-bottom:13px;padding:11px 12px;border-radius:14px;background:#f8fafc;border:1px dashed #b9c9dc;color:#42516a;font-size:.83rem;font-weight:800}.guide-link{display:flex;align-items:center;justify-content:center;min-height:50px;margin-bottom:13px;padding:11px 14px;border-radius:15px;color:#fff;text-decoration:none;text-align:center;font-weight:1000;background:linear-gradient(135deg,var(--navy),var(--blue))}.guide-link.green{background:linear-gradient(135deg,var(--green),var(--cyan))}.guide-link.orange{background:linear-gradient(135deg,var(--orange),#f3a23d)}.guide-link.lime{background:linear-gradient(135deg,var(--lime),var(--green))}.adbox{margin-top:auto;background:#f7faff;border:1px solid var(--line);border-radius:20px;padding:16px;text-align:center}.adlabel{display:inline-flex;margin-bottom:9px;padding:4px 9px;border-radius:999px;color:#fff;background:var(--navy);font-size:.7rem;font-weight:1000;letter-spacing:.08em}.instruction{display:block;margin-bottom:12px;color:#34435a;font-size:.87rem;font-weight:900}.banner,.a8-banner a{display:inline-flex!important;justify-content:center;max-width:100%;border-radius:15px;overflow:hidden;box-shadow:0 12px 27px rgba(6,23,46,.16)}.banner img,.a8-banner a img{width:min(300px,100%);height:auto}.led-link{display:flex!important;align-items:center;justify-content:center;min-height:70px;width:100%;padding:14px 16px;border-radius:17px;color:#fff!important;text-decoration:none;background:linear-gradient(135deg,var(--green),var(--cyan));font-weight:1000}.note{margin-top:12px;color:var(--muted);font-size:.79rem;font-weight:700;text-align:left}.pixel,.a8-banner>img{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+    .faq{display:grid;gap:10px}.faq details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px 17px;box-shadow:0 10px 24px rgba(6,23,46,.07)}.faq summary{cursor:pointer;color:var(--navy);font-weight:1000}.faq p{padding-top:10px;color:var(--muted);font-weight:700}.notice{background:#fff;border:1px solid var(--line);border-radius:22px;padding:21px;box-shadow:0 12px 30px rgba(6,23,46,.08)}.notice h2{color:var(--navy);font-size:1.35rem;margin-bottom:10px}.notice ul{padding-left:1.25em;display:grid;gap:8px}.notice li{color:var(--muted);font-size:.92rem;font-weight:700}footer{margin-top:30px;background:var(--navy);color:#eef5ff;padding:30px 0 105px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}footer small{color:#b9c9de}.mobile{position:fixed;left:10px;right:10px;bottom:10px;z-index:1100;display:none;grid-template-columns:repeat(4,1fr);gap:5px;padding:8px;border-radius:20px;background:rgba(255,255,255,.96);border:1px solid var(--line);box-shadow:0 18px 44px rgba(6,23,46,.23);backdrop-filter:blur(12px)}.mobile a{min-height:44px;display:grid;place-items:center;padding:5px 2px;border-radius:13px;text-decoration:none;text-align:center;color:#fff;font-size:.68rem;font-weight:1000;line-height:1.12}.mobile a:nth-child(1){background:linear-gradient(135deg,var(--teal),var(--cyan))}.mobile a:nth-child(2){background:linear-gradient(135deg,var(--green),var(--cyan))}.mobile a:nth-child(3){background:linear-gradient(135deg,var(--orange),#f3a23d)}.mobile a:nth-child(4){background:linear-gradient(135deg,var(--lime),var(--green))}
+    @media(max-width:920px){.hero-grid{grid-template-columns:1fr}.hero-panel{order:-1}.nav{display:none}.grid{grid-template-columns:1fr 1fr}.hero-actions{grid-template-columns:1fr}.mobile{display:grid}}@media(max-width:700px){body{padding-bottom:90px}.hero{padding:32px 0 27px}.hero h1{font-size:2.3rem}.grid{grid-template-columns:1fr}.card{padding:18px;border-radius:22px}.section-head h2{font-size:1.78rem}}
   </style>
 </head>
 <body>
 <a class="skip" href="#main">本文へ移動</a>
-<header>
-  <div class="container header-inner">
-    <a class="brand" href="./"><span class="brand-mark">B</span><span><strong>BRIDGEコスト削減ナビ</strong><small>BUSINESS COST GUIDE</small></span></a>
-    <nav class="nav" aria-label="ページ内メニュー"><a href="#gate">進む前の確認</a><a href="#choose">目的別に選ぶ</a><a href="#choose">確認先を見る</a></nav>
-  </div>
-</header>
+<header><div class="container header-inner"><a class="brand" href="./"><span class="brand-mark">B</span><span><strong>BRIDGEコスト削減ナビ</strong><small>BUSINESS COST GUIDE</small></span></a><nav class="nav"><a href="#running-cost">固定費・設備</a><a href="#operations">店舗・人員</a><a href="#cashflow">資金繰り</a></nav></div></header>
 
 <main id="main">
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="pr">PR｜アフィリエイト広告を含みます</span>
-        <h1>事業の固定費と運営負担、<br><span>必要な1項目から見直す。</span></h1>
-        <p class="lead">電気料金、通信、LED工事、POSレジ、勤怠管理、電子契約、資金繰り。広告を順番に押すのではなく、今いちばん困っている項目を1つ選び、対象条件を確認してから公式サービスへ進みます。</p>
-        <div class="hero-actions"><a href="#running-cost">固定費・通信</a><a href="#operations">店舗・業務改善</a><a href="#cashflow">資金繰り</a></div>
-        <p class="hero-note">株式会社BRIDGEへの電話・LINE・相談は不要です。申込、資料請求、見積、契約はリンク先の提供会社で行われます。</p>
-      </div>
-      <aside class="hero-panel">
-        <h2>成果につながりやすい確認順序</h2>
-        <ul class="check"><li>今すぐ改善したい課題を1つ選ぶ</li><li>対象者・必要情報・成果条件を確認する</li><li>提供会社からの確認連絡に対応できるか確認する</li><li>実際に利用・導入する意思がある場合だけ進む</li></ul>
-        <div class="caption">代表者本人や動作確認目的の広告クリックは行わず、ページ表示のみで確認してください。</div>
-      </aside>
-    </div>
-  </section>
+  <section class="hero"><div class="container hero-grid"><div><span class="service-note">サービス紹介を含みます</span><h1>事業の固定費と手間を、<br><span>必要なところから見直す。</span></h1><p class="lead">電気、通信、設備、レジ、勤怠、契約書、資金繰り。今いちばん負担になっている項目を選び、比較前に確認したいポイントを短く整理できます。</p><div class="hero-actions"><a href="#running-cost">固定費・設備を見直す</a><a href="#operations">店舗・人員管理を見直す</a><a href="#cashflow">資金繰りを確認する</a></div><p class="hero-note">申込みや契約は各サービス提供会社のサイトで行います。株式会社BRIDGEへの相談や連絡は必要ありません。</p></div><aside class="hero-panel"><h2>選び方はシンプルです</h2><ul class="check"><li>今いちばん負担になっている項目を選ぶ</li><li>現在の契約や運用方法を確認する</li><li>必要なサービスだけ比較する</li><li>料金と契約条件を確認して判断する</li></ul><div class="caption">すべてを見る必要はありません。今の課題に近い項目だけ確認してください。</div></aside></div></section>
 
-  <section id="gate" class="gate">
-    <div class="container">
-      <div class="section-head"><span class="eyebrow">BEFORE CLICK</span><h2>A8広告へ進む前に3点を確認</h2><p>クリック数を増やすことではなく、申込み・契約・利用開始まで進む可能性がある訪問者を送ることが重要です。</p></div>
-      <div class="gate-grid">
-        <div class="gate-card"><b>課題が具体的</b><p>電気代、通信、工事、レジ、勤怠、契約書、売掛金のうち、解決したい課題が決まっています。</p></div>
-        <div class="gate-card"><b>必要情報を用意できる</b><p>会社情報、店舗情報、現在の契約、従業員数、工事場所、売掛金資料などを確認できます。</p></div>
-        <div class="gate-card"><b>提供会社の確認に対応できる</b><p>案件によっては申込み後に電話・メール等の確認があります。対応可能な場合だけ進みます。</p></div>
-      </div>
-      <p class="gate-warning">情報収集だけで複数案件を連続クリックすると、A8のクリック数は増えても成果にはつながりません。目的に合う1件だけを確認してください。</p>
-    </div>
-  </section>
+  <section id="choose"><div class="container"><div class="section-head"><span class="eyebrow">CHOOSE YOUR PRIORITY</span><h2>今、見直したいことを選ぶ</h2><p>商品名ではなく、事業で困っていることから選べます。</p></div>
 
-  <section id="choose">
-    <div class="container">
-      <div class="section-head"><span class="eyebrow">CHOOSE ONE PURPOSE</span><h2>今いちばん優先する項目を1つ選ぶ</h2><p>専用ページがある項目は、まず対象条件を確認してから公式サービスへ進めます。</p></div>
+    <div id="running-cost" class="group"><div class="group-title"><span>1</span><h3>固定費・通信・設備</h3></div><div class="grid">
+      <article id="electric" class="card"><span class="tag">電気料金</span><h3>毎月の電気代を見直したい</h3><p>店舗・事務所などの電気料金や契約プランを確認したい事業者向けです。</p><ul class="fit"><li>電気料金が負担になっている</li><li>現在の契約内容を確認できる</li><li>供給エリアと切替条件を比較したい</li></ul><p class="before">確認しておくとスムーズ：電力会社、契約プラン、使用量、供給場所。</p><div class="adbox"><span class="adlabel">広告</span><span class="instruction">電気料金プランの確認はこちら</span><a class="banner" href="https://px.a8.net/svt/ejp?a8mat=4B7XX5+8G8IWI+3SPO+TU8U9" rel="nofollow sponsored"><img width="300" height="250" alt="電気料金プラン比較サービスの公式広告" src="https://www22.a8.net/svt/bgt?aid=260711033511&wid=001&eno=01&mid=s00000017718005012000&mc=1"></a><img class="pixel" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7XX5+8G8IWI+3SPO+TU8U9" alt=""><p class="note">供給エリア、現在の契約、切替条件はリンク先で確認してください。</p></div></article>
 
-      <div id="running-cost" class="group">
-        <div class="group-title"><span>1</span><h3>固定費・通信・設備を見直す</h3></div>
-        <div class="grid">
-          <article id="electric" class="card">
-            <span class="tag">PR｜電気料金見直し</span><h3>毎月の電気代を見直したい</h3>
-            <p>店舗・事務所などの電気料金や契約プランを確認したい事業者向けです。</p>
-            <ul class="fit"><li>電気料金が負担になっている</li><li>現在の契約内容を確認できる</li><li>供給エリアと切替条件を確認したい</li></ul>
-            <p class="before">用意する情報：現在の電力会社、契約プラン、使用量、供給場所。</p>
-            <div class="adbox"><span class="adlabel">広告</span><span class="instruction">公式バナーから料金比較の条件を確認</span>
-              <a class="banner" href="https://px.a8.net/svt/ejp?a8mat=4B7XX5+8G8IWI+3SPO+TU8U9" rel="nofollow sponsored"><img width="300" height="250" alt="電気料金プラン比較サービスの公式広告" src="https://www22.a8.net/svt/bgt?aid=260711033511&wid=001&eno=01&mid=s00000017718005012000&mc=1"></a>
-              <img class="pixel" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7XX5+8G8IWI+3SPO+TU8U9" alt="">
-              <p class="note">法人・個人とも対象です。供給エリア、現在の契約、切替条件はリンク先で確認してください。</p>
-            </div>
-          </article>
+      <article id="wifi" class="card wifi"><span class="tag">法人向けWi-Fi</span><h3>店舗・現場・外出先の通信を整えたい</h3><p>固定回線を引きにくい場所や、営業・出張で使う通信環境を見直したい法人向けです。</p><ul class="fit"><li>法人名義で利用する</li><li>利用場所・容量・必要台数が分かる</li><li>継続して業務に利用する</li></ul><p class="before">確認しておくとスムーズ：利用場所、通信容量、台数、契約期間。</p><a class="guide-link" href="business-wifi-guide.html">法人Wi-Fiの選び方を見る</a><div class="adbox"><span class="adlabel">広告</span><span class="instruction">法人向けプランの確認はこちら</span><div class="a8-banner"><a href="https://px.a8.net/svt/ejp?a8mat=4B7YP7+43NISY+5IK2+BXB8X" rel="nofollow"><img border="0" width="300" height="250" alt="法人向けクラウドWi-Fiサービスの公式広告" src="https://www22.a8.net/svt/bgt?aid=260712043248&wid=001&eno=01&mid=s00000025733002003000&mc=1"></a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4B7YP7+43NISY+5IK2+BXB8X" alt=""></div><p class="note">掲載サービスは法人向けです。料金、容量、契約期間、解約条件を確認してください。</p></div></article>
 
-          <article id="wifi" class="card wifi">
-            <span class="tag">PR｜法人向けクラウドWi-Fi</span><h3>店舗・現場・外出先の通信を整えたい</h3>
-            <p>法人名義で、業務用ポケット型Wi-Fiを具体的に利用したい事業者向けです。</p>
-            <ul class="fit"><li>法人として申し込む</li><li>利用場所・容量・必要台数が分かる</li><li>端末受取後も継続利用する</li></ul>
-            <p class="before">成果条件：新規法人が申込み後60日以内に端末を受け取り、1か月以上継続利用。</p>
-            <a class="guide-link" href="business-wifi-guide.html">30秒で対象条件を確認する</a>
-            <div class="adbox"><span class="adlabel">広告</span><span class="instruction">対象条件を確認済みの方はこちら</span>
-              <div class="a8-banner"><a href="https://px.a8.net/svt/ejp?a8mat=4B7YP7+43NISY+5IK2+BXB8X" rel="nofollow"><img border="0" width="300" height="250" alt="法人向けクラウドWi-Fiサービスの公式広告" src="https://www22.a8.net/svt/bgt?aid=260712043248&wid=001&eno=01&mid=s00000025733002003000&mc=1"></a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4B7YP7+43NISY+5IK2+BXB8X" alt=""></div>
-              <p class="note">個人からの申込みは成果対象外です。料金、容量、契約期間、解約条件は公式サイトで確認してください。</p>
-            </div>
-          </article>
-
-          <article id="led" class="card led">
-            <span class="tag">PR｜LED照明工事業者比較</span><h3>LED工事業者を比較したい</h3>
-            <p>店舗・事務所・工場などのLED照明工事を具体的に検討している事業者向けです。</p>
-            <ul class="fit"><li>工事場所と範囲が決まっている</li><li>希望時期を説明できる</li><li>確認連絡に対応できる</li></ul>
-            <p class="before">用意する情報：工事場所、照明数、希望時期、現地調査の可否。</p>
-            <a class="guide-link green" href="led-guide.html">工事前の対象条件を確認する</a>
-            <div class="adbox"><span class="adlabel">広告</span><span class="instruction">工事予定が具体的な方はこちら</span>
-              <a class="led-link" href="https://px.a8.net/svt/ejp?a8mat=4B7XX5+8GTYIA+2LHA+1TK94Y" rel="nofollow sponsored">LED照明工事業者の紹介条件を確認する</a>
-              <img class="pixel" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4B7XX5+8GTYIA+2LHA+1TK94Y" alt="">
-              <p class="note">問い合わせ後、業者または運営会社から連絡があります。実際に工事を検討している場合のみ進んでください。</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div id="operations" class="group">
-        <div class="group-title"><span>2</span><h3>店舗・人員・契約業務を改善する</h3></div>
-        <div class="grid">
-          <article id="pos" class="card pos">
-            <span class="tag">PR｜クラウドPOSレジ</span><h3>レジ・売上管理を効率化したい</h3>
-            <p>店舗の会計、売上分析、在庫・キャッシュレス対応をまとめて見直したい事業者向けです。</p>
-            <ul class="fit"><li>店舗でレジを実際に使う</li><li>現在の課題が具体的</li><li>資料請求後の確認に対応できる</li></ul>
-            <p class="before">用意する情報：業種、店舗数、現在のレジ、必要な機能。</p>
-            <a class="guide-link orange" href="pos-guide.html">POS導入前の対象条件を確認する</a>
-            <div class="adbox"><span class="adlabel">広告</span><span class="instruction">対象条件を確認済みの方はこちら</span>
-              <div class="a8-banner"><a href="https://px.a8.net/svt/ejp?a8mat=4B7YP5+CCQTO2+4Z10+5ZU29" rel="nofollow"><img border="0" width="300" height="250" alt="クラウドPOSレジの公式広告" src="https://www27.a8.net/svt/bgt?aid=260712041747&wid=001&eno=01&mid=s00000023202001007000&mc=1"></a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7YP5+CCQTO2+4Z10+5ZU29" alt=""></div>
-              <p class="important">レジを使用しない企業・業種、利用意思がない申込みは対象外です。</p>
-            </div>
-          </article>
-
-          <article id="time" class="card time">
-            <span class="tag">PR｜クラウド勤怠管理</span><h3>勤怠・シフト管理を効率化したい</h3>
-            <p>打刻、勤怠、シフト、労務管理をクラウド化したい事業者向けです。</p>
-            <ul class="fit"><li>従業員・スタッフがいる</li><li>現在の管理方法を説明できる</li><li>資料請求後の確認に対応できる</li></ul>
-            <p class="before">用意する情報：従業員数、拠点数、勤務形態、打刻方法。</p>
-            <a class="guide-link lime" href="timecard-guide.html">勤怠導入前の対象条件を確認する</a>
-            <div class="adbox"><span class="adlabel">広告</span><span class="instruction">対象条件を確認済みの方はこちら</span>
-              <a class="banner" href="https://px.a8.net/svt/ejp?a8mat=4B7YP2+6Y22UQ+4Z10+TTLOX" rel="nofollow sponsored"><img width="300" height="250" alt="クラウド勤怠管理サービスの公式広告" src="https://www21.a8.net/svt/bgt?aid=260712038420&wid=001&eno=01&mid=s00000023202005009000&mc=1"></a>
-              <img class="pixel" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7YP2+6Y22UQ+4Z10+TTLOX" alt="">
-              <p class="note">資料請求後、会社情報、従業員数、利用目的などの確認が行われる場合があります。</p>
-            </div>
-          </article>
-
-          <article id="sign" class="card sign">
-            <span class="tag">PR｜電子契約・契約書管理</span><h3>紙の契約書業務を減らしたい</h3>
-            <p>契約書の作成、保管、検索、更新管理をクラウドで効率化したい事業者向けです。</p>
-            <ul class="fit"><li>契約書管理の課題がある</li><li>利用人数と契約書数を確認できる</li><li>導入料金・支払い条件を確認する</li></ul>
-            <p class="before">用意する情報：利用人数、契約書数、必要機能、現在の管理方法。</p>
-            <div class="adbox"><span class="adlabel">広告</span><span class="instruction">導入を具体的に検討する方はこちら</span>
-              <div class="a8-banner"><a href="https://px.a8.net/svt/ejp?a8mat=4B7YP6+89OR8Y+3SPO+BEUDPD" rel="nofollow"><img border="0" width="300" height="250" alt="電子契約・契約書管理サービスの公式広告" src="https://www20.a8.net/svt/bgt?aid=260712042500&wid=001&eno=01&mid=s00000017718069006000&mc=1"></a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4B7YP6+89OR8Y+3SPO+BEUDPD" alt=""></div>
-              <p class="note">広告主を初めて利用する事業者向けです。導入料金、契約内容、支払い条件は公式サイトで確認してください。</p>
-              <p class="important">補助金の採択・利用を保証するものではありません。</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div id="cashflow" class="group">
-        <div class="group-title"><span>3</span><h3>売掛金の入金待ちを見直す</h3></div>
-        <div class="grid">
-          <article id="cash" class="card cash">
-            <span class="tag">PR｜売掛金前払いサービス</span><h3>入金待ちの売掛金を活用したい</h3>
-            <p>法人・個人事業主が、保有する売掛金を使った資金調達方法を確認するための入口です。</p>
-            <ul class="fit"><li>実在する売掛金がある</li><li>本人確認・売掛金資料を用意できる</li><li>手数料と契約条件を確認する</li></ul>
-            <p class="before">用意する情報：売掛先、請求書、入金予定日、本人確認書類など。</p>
-            <div class="adbox"><span class="adlabel">広告</span><span class="instruction">公式バナーから無料見積の条件を確認</span>
-              <a class="banner" href="https://px.a8.net/svt/ejp?a8mat=4B7YP2+6AU69E+4JGG+BXYE9" rel="nofollow sponsored"><img width="300" height="250" alt="売掛金前払いサービスの公式広告" src="https://www20.a8.net/svt/bgt?aid=260712038381&wid=001&eno=01&mid=s00000021184002006000&mc=1"></a>
-              <img class="pixel" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7YP2+6AU69E+4JGG+BXYE9" alt="">
-              <p class="note">企業・個人事業主が対象です。申込後、本人確認と売掛金の確認が必要です。融資ではありません。</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container"><div class="section-head"><span class="eyebrow">FAQ</span><h2>よくある質問</h2></div><div class="faq">
-      <details><summary>株式会社BRIDGEへ相談する必要はありますか？</summary><p>ありません。株式会社BRIDGEは比較・紹介サイトの運営者であり、各サービスの提供、見積、審査、契約、工事、資金提供は行いません。</p></details>
-      <details><summary>申込みや資料請求の後に連絡はありますか？</summary><p>サービスによっては、会社情報、利用目的、店舗・従業員・工事・契約書・売掛金などの状況を確認するため、提供会社から連絡やヒアリングがあります。</p></details>
-      <details><summary>必ずコストが下がりますか？</summary><p>保証はありません。現在の契約、利用状況、地域、導入費、契約期間、選択するプランによって結果は異なります。</p></details>
-      <details><summary>個人情報は株式会社BRIDGEに送られますか？</summary><p>本ページには入力フォームを設置していません。申込情報はリンク先の提供会社で入力します。</p></details>
+      <article id="led" class="card led"><span class="tag">LED照明工事</span><h3>LED工事業者を比較したい</h3><p>店舗・事務所・工場などのLED化を、費用や工事内容から比較したい事業者向けです。</p><ul class="fit"><li>工事場所と範囲が決まっている</li><li>希望時期を説明できる</li><li>現地調査や見積を進めたい</li></ul><p class="before">確認しておくとスムーズ：工事場所、照明数、希望時期、現地調査の可否。</p><a class="guide-link green" href="led-guide.html">LED工事の比較ポイントを見る</a><div class="adbox"><span class="adlabel">広告</span><span class="instruction">業者紹介サービスの確認はこちら</span><a class="led-link" href="https://px.a8.net/svt/ejp?a8mat=4B7XX5+8GTYIA+2LHA+1TK94Y" rel="nofollow sponsored">LED照明工事業者の紹介内容を確認する</a><img class="pixel" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4B7XX5+8GTYIA+2LHA+1TK94Y" alt=""><p class="note">問い合わせ後、工事場所・内容・希望時期などの確認連絡があります。</p></div></article>
     </div></div>
-  </section>
 
-  <section><div class="container"><div class="notice"><h2>広告・ご利用上の注意</h2><ul>
-    <li>本ページにはアフィリエイト広告（PR）が含まれます。</li>
-    <li>株式会社BRIDGEは各サービスの提供会社、通信事業者、代理店、審査会社、工事会社ではありません。</li>
-    <li>申込、見積、資料請求、料金、契約、審査、通信、工事、資金提供はリンク先の提供会社が行います。</li>
-    <li>費用削減、通信品質、契約成立、審査通過、補助金採択、資金調達、その他の成果を保証するものではありません。</li>
-    <li>広告リンクの利用により株式会社BRIDGEが成果報酬を受け取る場合があります。</li>
-  </ul></div></div></section>
+    <div id="operations" class="group"><div class="group-title"><span>2</span><h3>店舗・人員・契約業務</h3></div><div class="grid">
+      <article id="pos" class="card pos"><span class="tag">クラウドPOSレジ</span><h3>レジ・売上管理を効率化したい</h3><p>会計、売上分析、在庫、キャッシュレス対応をまとめて見直したい店舗向けです。</p><ul class="fit"><li>店舗でレジを使っている</li><li>手作業の集計を減らしたい</li><li>必要な機能を資料で比較したい</li></ul><p class="before">確認しておくとスムーズ：業種、店舗数、現在のレジ、必要な機能。</p><a class="guide-link orange" href="pos-guide.html">POSレジの選び方を見る</a><div class="adbox"><span class="adlabel">広告</span><span class="instruction">サービス資料の確認はこちら</span><div class="a8-banner"><a href="https://px.a8.net/svt/ejp?a8mat=4B7YP5+CCQTO2+4Z10+5ZU29" rel="nofollow"><img border="0" width="300" height="250" alt="クラウドPOSレジの公式広告" src="https://www27.a8.net/svt/bgt?aid=260712041747&wid=001&eno=01&mid=s00000023202001007000&mc=1"></a><img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7YP5+CCQTO2+4Z10+5ZU29" alt=""></div><p class="note">資料請求後、店舗情報や現在の運用について確認連絡が行われる場合があります。</p></div></article>
+
+      <article id="time" class="card time"><span class="tag">クラウド勤怠管理</span><h3>勤怠・シフト管理を効率化したい</h3><p>紙、表計算、複数店舗に分かれた勤怠管理をまとめたい事業者向けです。</p><ul class="fit"><li>従業員・スタッフがいる</li><li>現在の管理方法を見直したい</li><li>打刻やシフト機能を比較したい</li></ul><p class="before">確認しておくとスムーズ：従業員数、拠点数、勤務形態、打刻方法。</p><a class="guide-link lime" href="timecard-guide.html">勤怠管理の選び方を見る</a><div class="adbox"><span class="adlabel">広告</span><span class="instruction">サービス資料の確認はこちら</span><a class="banner" href="https://px.a8.net/svt/ejp?a8mat=4B7YP2+6Y22UQ+4Z10+TTLOX" rel="nofollow sponsored"><img width="300" height="250" alt="クラウド勤怠管理サービスの公式広告" src="https://www21.a8.net/svt/bgt?aid=260712038420&wid=001&eno=01&mid=s00000023202005009000&mc=1"></a><img class="pixel" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7YP2+6Y22UQ+4Z10+TTLOX" alt=""><p class="note">資料請求後、会社情報や従業員数について確認連絡が行われる場合があります。</p></div></article>
+
+      <article id="sign" class="card sign"><span class="tag">電子契約・契約書管理</span><h3>紙の契約書業務を減らしたい</h3><p>契約書の作成、署名、保管、検索、更新管理をまとめて見直したい事業者向けです。</p><ul class="fit"><li>契約書を探す時間を減らしたい</li><li>署名・保管の流れを整理したい</li><li>更新確認をしやすくしたい</li></ul><p class="before">確認しておくとスムーズ：利用人数、契約書数、必要機能、現在の管理方法。</p><div class="adbox"><span class="adlabel">広告</span><span class="instruction">電子契約サービスの確認はこちら</span><div class="a8-banner"><a href="https://px.a8.net/svt/ejp?a8mat=4B7YP6+89OR8Y+3SPO+BEUDPD" rel="nofollow"><img border="0" width="300" height="250" alt="電子契約・契約書管理サービスの公式広告" src="https://www20.a8.net/svt/bgt?aid=260712042500&wid=001&eno=01&mid=s00000017718069006000&mc=1"></a><img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4B7YP6+89OR8Y+3SPO+BEUDPD" alt=""></div><p class="note">料金、契約内容、支払い条件、利用できる機能を確認してください。</p></div></article>
+    </div></div>
+
+    <div id="cashflow" class="group"><div class="group-title"><span>3</span><h3>売掛金・資金繰り</h3></div><div class="grid">
+      <article id="cash" class="card cash"><span class="tag">売掛金前払いサービス</span><h3>売掛金の入金待ちを見直したい</h3><p>法人・個人事業主が、保有する売掛金を活用する方法を確認するための入口です。</p><ul class="fit"><li>実在する売掛金がある</li><li>請求書や入金予定日を確認できる</li><li>手数料と契約条件を比較したい</li></ul><p class="before">確認しておくとスムーズ：売掛先、請求書、入金予定日、本人確認書類。</p><div class="adbox"><span class="adlabel">広告</span><span class="instruction">無料見積の確認はこちら</span><a class="banner" href="https://px.a8.net/svt/ejp?a8mat=4B7YP2+6AU69E+4JGG+BXYE9" rel="nofollow sponsored"><img width="300" height="250" alt="売掛金前払いサービスの公式広告" src="https://www20.a8.net/svt/bgt?aid=260712038381&wid=001&eno=01&mid=s00000021184002006000&mc=1"></a><img class="pixel" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B7YP2+6AU69E+4JGG+BXYE9" alt=""><p class="note">融資ではありません。対象となる売掛金、手数料、必要書類、契約条件を確認してください。</p></div></article>
+    </div></div>
+  </div></section>
+
+  <section><div class="container"><div class="section-head"><span class="eyebrow">FAQ</span><h2>よくある質問</h2></div><div class="faq"><details><summary>株式会社BRIDGEへ相談する必要はありますか？</summary><p>ありません。申込み、見積、資料請求、契約はリンク先の提供会社で行います。</p></details><details><summary>資料請求や申込みの後に連絡はありますか？</summary><p>サービスによっては、会社情報や利用目的を確認するため、提供会社から連絡やヒアリングが行われる場合があります。</p></details><details><summary>必ずコストが下がりますか？</summary><p>現在の契約、利用状況、地域、導入費、契約期間によって結果は異なります。料金と契約条件を比較してください。</p></details><details><summary>個人情報は株式会社BRIDGEに送られますか？</summary><p>本ページには入力フォームを設置していません。申込情報はリンク先の提供会社で入力します。</p></details></div></div></section>
+  <section><div class="container"><div class="notice"><h2>ご利用上の注意</h2><ul><li>本ページには広告リンクが含まれます。</li><li>株式会社BRIDGEは各サービスの提供会社、通信事業者、工事会社、審査会社ではありません。</li><li>申込、見積、資料請求、料金、契約、審査、通信、工事、資金提供はリンク先の提供会社が行います。</li><li>費用削減、通信品質、契約成立、審査通過、資金調達などを保証するものではありません。</li></ul></div></div></section>
 </main>
-
-<footer><div class="container footer-inner"><div><strong>BRIDGEコスト削減ナビ</strong><br><small>運営：株式会社BRIDGE</small></div><small>© BRIDGE CO., LTD. / This page contains PR links.</small></div></footer>
+<footer><div class="container footer-inner"><div><strong>BRIDGEコスト削減ナビ</strong><br><small>運営：株式会社BRIDGE</small></div><small>© BRIDGE CO., LTD.</small></div></footer>
 <nav class="mobile" aria-label="スマートフォン用固定メニュー"><a href="business-wifi-guide.html">Wi-Fi</a><a href="led-guide.html">LED</a><a href="pos-guide.html">POS</a><a href="timecard-guide.html">勤怠</a></nav>
-<script>
-  window.dataLayer=window.dataLayer||[];
-  document.addEventListener('click',function(event){
-    var link=event.target.closest('a[href^="https://px.a8.net/"]');
-    if(!link){return;}
-    var card=link.closest('article');
-    var title=card&&card.querySelector('h3')?card.querySelector('h3').textContent.trim():'a8_external_click';
-    window.dataLayer.push({event:'affiliate_click',affiliate_category:title,page_location:location.href});
-  });
-</script>
+<script>window.dataLayer=window.dataLayer||[];document.addEventListener('click',function(event){var link=event.target.closest('a[href^="https://px.a8.net/"]');if(!link)return;var card=link.closest('article');var title=card&&card.querySelector('h3')?card.querySelector('h3').textContent.trim():'external_service';window.dataLayer.push({event:'affiliate_click',affiliate_category:title,page_location:location.href})});</script>
 </body>
 </html>
