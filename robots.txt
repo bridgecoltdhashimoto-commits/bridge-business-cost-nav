@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bridgecoltdhashimoto-commits.github.io/bridge-business-cost-nav/sitemap.xml
