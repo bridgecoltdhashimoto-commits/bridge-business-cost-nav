@@ -8,6 +8,7 @@
     style.textContent = [
       ".top-back{display:inline-flex;margin-left:12px;color:#164f9c;text-decoration:none;font-size:.78rem;font-weight:900}",
       ".service-note{display:inline-flex;padding:5px 9px;border-radius:999px;background:#eef4ff;color:#164f9c;font-size:.72rem;font-weight:900}",
+      ".decision-note{max-width:760px;margin:0 auto 18px;padding:13px 15px;border-radius:15px;background:#f4f8fc;border:1px solid #d9e4ef;color:#34465d;font-size:.88rem;font-weight:750;line-height:1.7}",
       "@media(max-width:820px){.top-back{display:none}}"
     ].join("");
     document.head.appendChild(style);
@@ -46,10 +47,37 @@
     brand.appendChild(back);
   }
 
+  function getDecisionText() {
+    var path = window.location.pathname;
+    if (/pos-guide\.html$/.test(path)) {
+      return "店舗数、現在のレジ、必要な機能、導入時期を整理してから資料を確認すると、比較がスムーズです。";
+    }
+    if (/timecard-guide\.html$/.test(path)) {
+      return "従業員数、拠点数、勤務形態、希望する打刻方法を整理してから確認してください。";
+    }
+    if (/business-wifi-guide\.html$/.test(path)) {
+      return "利用場所、必要台数、通信容量、利用期間が分かる状態で確認すると、適切なプランを比べやすくなります。";
+    }
+    if (/led-guide\.html$/.test(path)) {
+      return "工事場所、照明数、希望時期、現地調査の可否を整理し、具体的に工事を検討する段階で確認してください。";
+    }
+    return "現在の課題、必要な条件、導入時期を整理し、具体的に比較する段階で確認してください。";
+  }
+
+  function addDecisionNote() {
+    var adShell = document.querySelector("#official .ad-shell, #official .adbox");
+    if (!adShell || adShell.parentElement.querySelector(".decision-note")) return;
+    var note = document.createElement("p");
+    note.className = "decision-note";
+    note.textContent = getDecisionText();
+    adShell.parentElement.insertBefore(note, adShell);
+  }
+
   function polishPage() {
     addStyles();
     replacePhrases();
     addBackLink();
+    addDecisionNote();
 
     var topDisclosure = document.querySelector(".topbar .pr");
     if (topDisclosure) {
